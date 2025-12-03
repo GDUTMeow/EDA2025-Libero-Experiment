@@ -31,3 +31,5 @@
 ### 要求
 
 按照微助教内[PDF](./Exp4/Libero-SoC-Fully-Design-Manual.pdf)文件流程操作一遍，烧录并测试
+
+做完后做书本P46例2-2
