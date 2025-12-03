@@ -1,0 +1,21 @@
+
+Starting:    C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\mbin\synplify.exe
+Install:     C:\Microsemi\Libero_SoC_v11.9\SynplifyPro
+Hostname:    LUMINE-LAPTOP
+Date:        Wed Dec 03 20:50:53 2025
+Version:     L-2016.09M-SP1-5
+
+Arguments:   -product synplify_pro AllModule_syn.tcl
+ProductType: synplify_pro
+
+License checkout: synplifypro_actel
+License: synplifypro_actel node-locked 
+Licensed Vendor: actel
+License Option: actel_oem
+
+
+
+TCL script complete: "AllModule_syn.tcl"
+New HDL Analyst: enabled
+exit status=0
+License checkin: synplifypro_actel

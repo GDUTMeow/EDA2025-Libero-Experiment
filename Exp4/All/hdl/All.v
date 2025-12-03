@@ -1,4 +1,4 @@
-module all(a, b, c, y);
+module AllModule(a, b, c, y);
     input a, b, c;
     output reg [0:0] y;
     always

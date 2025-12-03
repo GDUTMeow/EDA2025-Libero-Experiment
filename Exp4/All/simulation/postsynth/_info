@@ -9,48 +9,48 @@ z2
 cModel Technology
 Z0 dF:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/All/simulation
 vall
-!s110 1764765511
+Z1 !s110 1764765901
 !i10b 1
 !s100 5[>A;Nl66=aH4W0m?H4[m0
 IG3^?E6Nk6S_RQ@Fa5SaT02
-Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1764765505
+w1764765893
 8F:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/All/synthesis/all.v
 FF:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/All/synthesis/all.v
 L0 5
-Z2 OW;L;10.5c;63
+Z3 OW;L;10.5c;63
 r1
 !s85 0
 31
-!s108 1764765511.000000
+Z4 !s108 1764765901.000000
 !s107 F:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/All/synthesis/all.v|
 !s90 -reportprogress|300|-vlog01compat|-work|postsynth|F:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/All/synthesis/all.v|
 !s101 -O0
 !i113 1
-Z3 o-vlog01compat -work postsynth -O0
-Z4 tCvgOpt 0
+Z5 o-vlog01compat -work postsynth -O0
+Z6 tCvgOpt 0
 vtestAll
-!s110 1764765512
+R1
 !i10b 1
 !s100 <7A3ahOOJnX>OZA[7i5>^1
 IDP3TgBhS[8ZVUn22YlIjJ0
-R1
+R2
 R0
 w1764765300
 8F:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/All/stimulus/testAll.v
 FF:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/All/stimulus/testAll.v
 L0 3
-R2
+R3
 r1
 !s85 0
 31
-!s108 1764765512.000000
+R4
 !s107 F:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/All/stimulus/testAll.v|
 !s90 -reportprogress|300|+incdir+F:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/All/stimulus|-vlog01compat|-work|postsynth|F:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/All/stimulus/testAll.v|
 !s101 -O0
 !i113 1
-R3
+R5
 !s92 +incdir+F:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/All/stimulus -vlog01compat -work postsynth -O0
-R4
+R6
 ntest@all

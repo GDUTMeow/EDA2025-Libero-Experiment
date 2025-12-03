@@ -24,7 +24,6 @@ set_option -part_companion ""
 
 #compilation/mapping options
 set_option -use_fsm_explorer 0
-set_option -top_module "all"
 
 # hdl_compiler_options
 set_option -distributed_compile 0
@@ -70,5 +69,5 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "F:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/All/synthesis/all.edn"
+project -result_file "F:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/All/synthesis/AllModule.edn"
 impl -active "synthesis"

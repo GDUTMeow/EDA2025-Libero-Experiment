@@ -4,7 +4,7 @@ module testAll;
     reg a, b, c;
     wire y;
 
-all plat(a, b, c, y);
+AllModule plat(a, b, c, y);
     initial
         begin
             a = 0;

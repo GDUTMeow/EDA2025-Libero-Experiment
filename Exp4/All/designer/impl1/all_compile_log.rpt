@@ -2,13 +2,9 @@ Microsemi Libero Software
 Version: 11.9.0.4
 Release: v11.9
 
-Info: The design F:\Git\GDUTMeow\EDA2025-Libero-Experiment\Exp4\All\designer\impl1\all.adb was
-      last modified by software version 11.9.0.4.
-Opened an existing Libero design
-F:\Git\GDUTMeow\EDA2025-Libero-Experiment\Exp4\All\designer\impl1\all.adb.
+Info: The design all.adb was last modified by software version 11.9.0.4.
+Opened an existing Libero design all.adb.
 'BA_NAME' set to 'all_ba'
-'KEEP_EXISTING_PHYSICAL_CONSTRAINTS' set to '0'
-'SDC_IMPORT_MERGE' set to '0'
 'IDE_DESIGNERVIEW_NAME' set to 'Impl1'
 'IDE_DESIGNERVIEW_COUNT' set to '1'
 'IDE_DESIGNERVIEW_REV0' set to 'Impl1'
@@ -16,7 +12,11 @@ F:\Git\GDUTMeow\EDA2025-Libero-Experiment\Exp4\All\designer\impl1\all.adb.
 'IDE_DESIGNERVIEW_ROOTDIR' set to 'F:\Git\GDUTMeow\EDA2025-Libero-Experiment\Exp4\All\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
-The Execute Script command succeeded ( 00:00:01 )
+ Netlist Reading Time = 0.0 seconds
+Imported the file:
+   F:\Git\GDUTMeow\EDA2025-Libero-Experiment\Exp4\All\synthesis\all.edn
+
+The Import command succeeded ( 00:00:01 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -31,8 +31,8 @@ Speed grade : STD
 Temp        : 0:25:70
 Voltage     : 1.58:1.50:1.42
 
-Keep Existing Physical Constraints : Yes
-Keep Existing Timing Constraints   : No
+Keep Existing Physical Constraints : No
+Keep Existing Timing Constraints   : Yes
 
 pdc_abort_on_error                 : Yes
 pdc_eco_display_unmatched_objects  : No
@@ -154,85 +154,18 @@ Nets that are candidates for clock assignment and the resulting fanout:
     1       INT_NET       Net   : y_c[0]
                           Driver: y[0]
 
-The Compile command succeeded ( 00:00:01 )
-***** Layout Variables *********************************************
-
-Mode: TIMING_DRIVEN
-Power-driven Layout: OFF
-Incremental Placement: OFF
-Incremental Route: OFF
-
-
-
-Running I/O Bank Assigner.
-
-I/O Bank Assigner completed successfully.
- 
-
-Planning global net placement...
-
-Global net placement completed successfully.
-
-                        o - o - o - o - o - o
-
-Timing-driven Placer Started: Wed Dec 03 20:40:44 2025
-
-Placer Finished: Wed Dec 03 20:40:44 2025
-Total Placer CPU Time:     00:00:00
-
-                        o - o - o - o - o - o
-
-
-Timing-driven Router 
-Design: all                             Started: Wed Dec 03 20:40:45 2025
-
- 
-
-Timing-driven Router completed successfully.
-
-Design: all                             
-Finished: Wed Dec 03 20:40:46 2025
-Total CPU Time:     00:00:00            Total Elapsed Time: 00:00:01
-Total Memory Usage: 112.7 Mbytes
-                        o - o - o - o - o - o
-
-Loading the Timing data for the design.
-Finished loading the Timing data.
-
-The Layout command succeeded ( 00:00:06 )
-Warning: Files
-          F:\Git\GDUTMeow\EDA2025-Libero-Experiment\Exp4\All\designer\impl1\all_ba.sdf
-          F:\Git\GDUTMeow\EDA2025-Libero-Experiment\Exp4\All\designer\impl1\all_ba.v
-         already exist.
-         Do you want to replace the files? [YES]
-Back-annotated to the file(s):
-   .\all_ba.sdf
-   .\all_ba.v
-
-The Back-Annotate command succeeded ( 00:00:00 )
-Warning: The following files already exist:
-         
-         F:\Git\GDUTMeow\EDA2025-Libero-Experiment\Exp4\All\designer\impl1\all.pdb
-         
-         Do you want to replace the files? [YES]
-
-The Export-map command succeeded ( 00:00:04 )
-Warning: Overwriting the existing file:
-         F:\Git\GDUTMeow\EDA2025-Libero-Experiment\Exp4\All\designer\impl1\all.pdb.
-Wrote to the file: F:\Git\GDUTMeow\EDA2025-Libero-Experiment\Exp4\All\designer\impl1\all.pdb
-CHECKSUM: 3D0B
-
-The Generate programming file command succeeded ( 00:00:04 )
-Design saved to file F:\Git\GDUTMeow\EDA2025-Libero-Experiment\Exp4\All\designer\impl1\all.adb.
-Wrote pin report to file:
-F:\Git\GDUTMeow\EDA2025-Libero-Experiment\Exp4\All\designer\impl1\all_report_pin_byname.txt
+The Compile command succeeded ( 00:00:00 )
+Wrote status report to file: all_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )
-Wrote pin report to file:
-F:\Git\GDUTMeow\EDA2025-Libero-Experiment\Exp4\All\designer\impl1\all_report_pin_bynumber.txt
+Wrote pin report to file: all_report_pin_byname.txt
 
 The Report command succeeded ( 00:00:01 )
+Wrote pin report to file: all_report_pin_bynumber.txt
 
-The Execute Script command succeeded ( 00:00:01 )
+The Report command succeeded ( 00:00:01 )
+Design saved to file F:\Git\GDUTMeow\EDA2025-Libero-Experiment\Exp4\All\designer\impl1\all.adb.
+
+The Execute Script command succeeded ( 00:00:05 )
 Design closed.
 
