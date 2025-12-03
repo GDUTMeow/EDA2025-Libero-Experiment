@@ -1,0 +1,55 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/Project/simulation
+vdecoder2x4
+!s110 1764763485
+!i10b 1
+!s100 VNoD1[Hb];=JUU]U9Qg]W1
+I0[d9BHaoeJ<i4=hg>_1o90
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1764763442
+8F:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/Project/designer/impl1/decoder2x4_ba.v
+FF:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/Project/designer/impl1/decoder2x4_ba.v
+L0 6
+Z2 OW;L;10.5c;63
+r1
+!s85 0
+31
+!s108 1764763485.000000
+!s107 F:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/Project/designer/impl1/decoder2x4_ba.v|
+!s90 -reportprogress|300|-vlog01compat|-work|postlayout|F:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/Project/designer/impl1/decoder2x4_ba.v|
+!s101 -O0
+!i113 1
+Z3 o-vlog01compat -work postlayout -O0
+Z4 tCvgOpt 0
+vtestdecoder2x4
+!s110 1764763486
+!i10b 1
+!s100 7adCPo6;XPWl1:H7Y<>8B3
+IK6MD=mJ`5dzCn;z0@[^fa2
+R1
+R0
+w1764758796
+8F:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/Project/stimulus/testbench.v
+FF:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/Project/stimulus/testbench.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1764763486.000000
+!s107 F:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/Project/stimulus/testbench.v|
+!s90 -reportprogress|300|+incdir+F:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/Project/stimulus|-vlog01compat|-work|postlayout|F:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/Project/stimulus/testbench.v|
+!s101 -O0
+!i113 1
+R3
+!s92 +incdir+F:/Git/GDUTMeow/EDA2025-Libero-Experiment/Exp4/Project/stimulus -vlog01compat -work postlayout -O0
+R4

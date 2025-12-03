@@ -41,30 +41,105 @@ VALUE="Impl1",NUM=1
 CURREV=1
 ENDLIST
 LIST FileManager
+VALUE "<project>\designer\impl1\decoder2x4.adb,adb"
+STATE="utd"
+TIME="1764763106"
+SIZE="34304"
+ENDFILE
 VALUE "<project>\designer\impl1\decoder2x4.ide_des,ide_des"
 STATE="utd"
-TIME="1764758607"
-SIZE="176"
+TIME="1764763106"
+SIZE="1007"
+ENDFILE
+VALUE "<project>\designer\impl1\decoder2x4.pdb,pdb"
+STATE="utd"
+TIME="1764763102"
+SIZE="14665"
+ENDFILE
+VALUE "<project>\designer\impl1\decoder2x4_ba.sdf,ba_sdf"
+STATE="utd"
+TIME="1764763095"
+SIZE="7082"
+ENDFILE
+VALUE "<project>\designer\impl1\decoder2x4_ba.v,ba_hdl"
+STATE="utd"
+TIME="1764763095"
+SIZE="2597"
+ENDFILE
+VALUE "<project>\designer\impl1\decoder2x4_compile_log.rpt,log"
+STATE="utd"
+TIME="1764763076"
+SIZE="6686"
+ENDFILE
+VALUE "<project>\designer\impl1\decoder2x4_fp\decoder2x4.pro,pro"
+STATE="utd"
+TIME="1764763171"
+SIZE="2443"
+ENDFILE
+VALUE "<project>\designer\impl1\decoder2x4_fp\projectData\decoder2x4.pdb,pdb"
+STATE="utd"
+TIME="1764763171"
+SIZE="14665"
+ENDFILE
+VALUE "<project>\designer\impl1\decoder2x4_prgdata_log.rpt,log"
+STATE="utd"
+TIME="1764763330"
+SIZE="902"
+ENDFILE
+VALUE "<project>\designer\impl1\decoder2x4_verifytiming_log.rpt,log"
+STATE="utd"
+TIME="1764763325"
+SIZE="1200"
 ENDFILE
 VALUE "<project>\hdl\dec2x4.v,hdl"
 STATE="utd"
-TIME="1764758373"
-SIZE="324"
+TIME="1764762889"
+SIZE="366"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1764758998"
-SIZE="637"
+TIME="1764762100"
+SIZE="920"
 ENDFILE
-VALUE "<project>\simulation\testdecoder2x4_presynth_simulation.log,log"
+VALUE "<project>\simulation\testdecoder2x4_postlayout_simulation.log,log"
 STATE="utd"
-TIME="1764759405"
-SIZE="2436"
+TIME="1764763310"
+SIZE="552"
+ENDFILE
+VALUE "<project>\simulation\wave.do,do"
+STATE="utd"
+TIME="1764763512"
+SIZE="800"
 ENDFILE
 VALUE "<project>\stimulus\testbench.v,tb_hdl"
 STATE="utd"
 TIME="1764758796"
 SIZE="684"
+ENDFILE
+VALUE "<project>\synthesis\decoder2x4.edn,syn_edn"
+STATE="utd"
+TIME="1764762902"
+SIZE="7565"
+ENDFILE
+VALUE "<project>\synthesis\decoder2x4.so,so"
+STATE="utd"
+TIME="1764762902"
+SIZE="244"
+ENDFILE
+VALUE "<project>\synthesis\decoder2x4.v,syn_hdl"
+STATE="utd"
+TIME="1764760280"
+SIZE="944"
+ENDFILE
+VALUE "<project>\synthesis\decoder2x4_sdc.sdc,syn_sdc"
+STATE="utd"
+TIME="1764762902"
+SIZE="310"
+ENDFILE
+VALUE "<project>\synthesis\decoder2x4_syn.prj,prj"
+STATE="utd"
+TIME="1764762902"
+SIZE="1747"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -77,7 +152,10 @@ VALUE "<project>\stimulus\testbench.v,tb_hdl"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
+LiberoState=Post_Layout
 ideSTIMULUS=StateSuccess
+ideDESIGNER(<project>\designer\impl1\decoder2x4.adb,adb)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\decoder2x4.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -86,6 +164,10 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl1\decoder2x4_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl1\decoder2x4_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
 ENDLIST
@@ -171,7 +253,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\Modelsim\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l testdecoder2x4_postlayout_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -198,7 +280,10 @@ ENDLIST
 LIST ProjectState5.1
 LIST "decoder2x4::work"
 LIST Impl1
+LiberoState=Post_Layout
 ideSTIMULUS=StateSuccess
+ideDESIGNER(<project>\designer\impl1\decoder2x4.adb,adb)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\decoder2x4.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -221,8 +306,10 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Generate Programming Data:decoder2x4_prgdata_log.rpt
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "decoder2x4::work","hdl\dec2x4.v","FALSE","FALSE"
