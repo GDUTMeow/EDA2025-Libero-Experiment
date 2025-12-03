@@ -1,0 +1,55 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/GDUT/Week14/simulation
+vdecoder2x4
+Z1 !s110 1764759004
+!i10b 1
+!s100 >n2_K12WJFRNQAVLYk:YT0
+I<nY0ko?o`Y4EW6n52CnY70
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1764758373
+8F:/GDUT/Week14/hdl/dec2x4.v
+FF:/GDUT/Week14/hdl/dec2x4.v
+L0 1
+Z3 OW;L;10.5c;63
+r1
+!s85 0
+31
+Z4 !s108 1764759004.000000
+!s107 F:/GDUT/Week14/hdl/dec2x4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|F:/GDUT/Week14/hdl/dec2x4.v|
+!s101 -O0
+!i113 1
+Z5 o-vlog01compat -work presynth -O0
+Z6 tCvgOpt 0
+vtestdecoder2x4
+R1
+!i10b 1
+!s100 7adCPo6;XPWl1:H7Y<>8B3
+I5k7mHH^B423;VZBCJRLL53
+R2
+R0
+w1764758796
+8F:/GDUT/Week14/stimulus/testbench.v
+FF:/GDUT/Week14/stimulus/testbench.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/GDUT/Week14/stimulus/testbench.v|
+!s90 -reportprogress|300|+incdir+F:/GDUT/Week14/stimulus|-vlog01compat|-work|presynth|F:/GDUT/Week14/stimulus/testbench.v|
+!s101 -O0
+!i113 1
+R5
+!s92 +incdir+F:/GDUT/Week14/stimulus -vlog01compat -work presynth -O0
+R6
