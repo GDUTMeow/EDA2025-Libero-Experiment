@@ -43,27 +43,27 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\designer\impl1\decoder2x4.adb,adb"
 STATE="utd"
-TIME="1764763106"
+TIME="1764763704"
 SIZE="34304"
 ENDFILE
 VALUE "<project>\designer\impl1\decoder2x4.ide_des,ide_des"
 STATE="utd"
-TIME="1764763106"
+TIME="1764763704"
 SIZE="1007"
 ENDFILE
 VALUE "<project>\designer\impl1\decoder2x4.pdb,pdb"
 STATE="utd"
-TIME="1764763102"
+TIME="1764763701"
 SIZE="14665"
 ENDFILE
 VALUE "<project>\designer\impl1\decoder2x4_ba.sdf,ba_sdf"
 STATE="utd"
-TIME="1764763095"
+TIME="1764763691"
 SIZE="7082"
 ENDFILE
 VALUE "<project>\designer\impl1\decoder2x4_ba.v,ba_hdl"
 STATE="utd"
-TIME="1764763095"
+TIME="1764763691"
 SIZE="2597"
 ENDFILE
 VALUE "<project>\designer\impl1\decoder2x4_compile_log.rpt,log"
@@ -73,12 +73,12 @@ SIZE="6686"
 ENDFILE
 VALUE "<project>\designer\impl1\decoder2x4_fp\decoder2x4.pro,pro"
 STATE="utd"
-TIME="1764763171"
+TIME="1764763534"
 SIZE="2443"
 ENDFILE
 VALUE "<project>\designer\impl1\decoder2x4_fp\projectData\decoder2x4.pdb,pdb"
 STATE="utd"
-TIME="1764763171"
+TIME="1764763534"
 SIZE="14665"
 ENDFILE
 VALUE "<project>\designer\impl1\decoder2x4_prgdata_log.rpt,log"
@@ -98,13 +98,13 @@ SIZE="366"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1764762100"
+TIME="1764763480"
 SIZE="920"
 ENDFILE
 VALUE "<project>\simulation\testdecoder2x4_postlayout_simulation.log,log"
 STATE="utd"
-TIME="1764763310"
-SIZE="552"
+TIME="1764763521"
+SIZE="4251"
 ENDFILE
 VALUE "<project>\simulation\wave.do,do"
 STATE="utd"
@@ -253,7 +253,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\Modelsim\win32acoem\modelsim.exe"
-PARAM=" -l testdecoder2x4_postlayout_simulation.log "
+PARAM=""
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -306,10 +306,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Generate Programming Data:decoder2x4_prgdata_log.rpt
 StartPage;StartPage;0
-ACTIVEVIEW;Reports
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "decoder2x4::work","hdl\dec2x4.v","FALSE","FALSE"
