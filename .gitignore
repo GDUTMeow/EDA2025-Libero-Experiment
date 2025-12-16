@@ -1,11 +1,11 @@
 *.log
 *.txt
-# Exp4/*/component
-# Exp4/*/constraint
-# Exp4/*/coreconsole
-# Exp4/*/designer
-# Exp4/*/simulation
-# Exp4/*/smartgen
-# Exp4/*/synthesis
-# Exp4/*/tooldata
-# Exp4/*/viewdraw
+Exp4/*/component
+Exp4/*/constraint
+Exp4/*/coreconsole
+Exp4/*/designer
+Exp4/*/simulation
+Exp4/*/smartgen
+Exp4/*/synthesis
+Exp4/*/tooldata
+Exp4/*/viewdraw
