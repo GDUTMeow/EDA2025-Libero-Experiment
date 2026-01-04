@@ -1,0 +1,487 @@
+KEY LIBERO "11.9"
+KEY CAPTURE "11.9.0.4"
+KEY DEFAULT_IMPORT_LOC ""
+KEY DEFAULT_OPEN_LOC ""
+KEY ProjectID "0"
+KEY HDLTechnology "VERILOG"
+KEY VERILOGMODE "VERILOG2001"
+KEY VHDLMODE "VHDL2008"
+KEY UseConstraintFlowTechnology "FALSE"
+KEY VendorTechnology_Family "ProASIC3"
+KEY VendorTechnology_Die "IS2X2M1"
+KEY VendorTechnology_Package "vq100"
+KEY VendorTechnology_Speed "STD"
+KEY VendorTechnology_DieVoltage "1.5"
+KEY VendorTechnology_PART_RANGE "COM"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE ""
+KEY VendorTechnology_IO_DEFT_STD "LVTTL"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY ""
+KEY VendorTechnology_RAD_EXPOSURE ""
+KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
+KEY VendorTechnology_RESTRICTPROBEPINS "1"
+KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE ""
+KEY VendorTechnology_TARGETDEVICESFORMIGRATION "IS2X2M1"
+KEY VendorTechnology_TEMPR "COM"
+KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
+KEY VendorTechnology_VCCI_1.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
+KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
+KEY VendorTechnology_VOLTR "COM"
+KEY ProjectLocation "F:\Git\GDUTMeow\EDA2025-Libero-Experiment\Teamwork1"
+KEY ProjectDescription "????74hc04 ?74hc86 ?????(??????12+12 ?)?????????????????????????????????????????"
+KEY Pa4PeripheralNewSeq "GOOD"
+KEY SimulationType "VERILOG"
+KEY Vendor "Actel"
+KEY ActiveRoot "top_module::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+VALUE="Impl2",NUM=2
+CURREV=2
+ENDLIST
+LIST FileManager
+VALUE "<project>\constraint\top_module.pdc,pdc"
+STATE="utd"
+TIME="1767522579"
+SIZE="3226"
+ENDFILE
+VALUE "<project>\designer\impl2\top_module.adb,adb"
+STATE="utd"
+TIME="1767521609"
+SIZE="42496"
+ENDFILE
+VALUE "<project>\designer\impl2\top_module.ide_des,ide_des"
+STATE="utd"
+TIME="1767521372"
+SIZE="213"
+ENDFILE
+VALUE "<project>\designer\impl2\top_module.pdb,pdb"
+STATE="utd"
+TIME="1767522210"
+SIZE="16411"
+ENDFILE
+VALUE "<project>\designer\impl2\top_module_ba.sdf,ba_sdf"
+STATE="utd"
+TIME="1767522197"
+SIZE="19307"
+ENDFILE
+VALUE "<project>\designer\impl2\top_module_ba.v,ba_hdl"
+STATE="utd"
+TIME="1767522197"
+SIZE="7670"
+ENDFILE
+VALUE "<project>\designer\impl2\top_module_compile_log.rpt,log"
+STATE="utd"
+TIME="1767521609"
+SIZE="7756"
+ENDFILE
+VALUE "<project>\designer\impl2\_74hc04.adb,adb"
+STATE="utd"
+TIME="1767521087"
+SIZE="27648"
+ENDFILE
+VALUE "<project>\designer\impl2\_74hc04.ide_des,ide_des"
+STATE="utd"
+TIME="1767515720"
+SIZE="210"
+ENDFILE
+VALUE "<project>\designer\impl2\_74hc04_compile_log.rpt,log"
+STATE="utd"
+TIME="1767521087"
+SIZE="7257"
+ENDFILE
+VALUE "<project>\hdl\74hc04.v,hdl"
+STATE="utd"
+TIME="1767512342"
+SIZE="367"
+ENDFILE
+VALUE "<project>\hdl\74hc86.v,hdl"
+STATE="utd"
+TIME="1767512353"
+SIZE="377"
+ENDFILE
+VALUE "<project>\hdl\top_module.v,hdl"
+STATE="utd"
+TIME="1767521508"
+SIZE="974"
+ENDFILE
+VALUE "<project>\simulation\run.do,do"
+STATE="utd"
+TIME="1767515813"
+SIZE="705"
+ENDFILE
+VALUE "<project>\simulation\testall_bench_postsynth_simulation.log,log"
+STATE="utd"
+TIME="1767520924"
+SIZE="68"
+ENDFILE
+VALUE "<project>\simulation\testall_bench_presynth_simulation.log,log"
+STATE="utd"
+TIME="1767515906"
+SIZE="5413"
+ENDFILE
+VALUE "<project>\stimulus\74hc04_testbench.v,tb_hdl"
+STATE="utd"
+TIME="1767515020"
+SIZE="735"
+ENDFILE
+VALUE "<project>\stimulus\74hc86_testbench.v,tb_hdl"
+STATE="utd"
+TIME="1767515033"
+SIZE="917"
+ENDFILE
+VALUE "<project>\stimulus\testall_bench.v,tb_hdl"
+STATE="utd"
+TIME="1767520813"
+SIZE="575"
+ENDFILE
+VALUE "<project>\synthesis\synwork\layer0.so,so"
+STATE="utd"
+TIME="1767521393"
+SIZE="159"
+ENDFILE
+VALUE "<project>\synthesis\top_module.edn,syn_edn"
+STATE="utd"
+TIME="1767521542"
+SIZE="16646"
+ENDFILE
+VALUE "<project>\synthesis\top_module.so,so"
+STATE="utd"
+TIME="1767521542"
+SIZE="241"
+ENDFILE
+VALUE "<project>\synthesis\top_module.v,syn_hdl"
+STATE="utd"
+TIME="1767521565"
+SIZE="3887"
+ENDFILE
+VALUE "<project>\synthesis\top_module_sdc.sdc,syn_sdc"
+STATE="utd"
+TIME="1767521542"
+SIZE="310"
+ENDFILE
+VALUE "<project>\synthesis\top_module_syn.prj,prj"
+STATE="utd"
+TIME="1767521379"
+SIZE="817"
+ENDFILE
+VALUE "<project>\synthesis\_74hc04.edn,syn_edn"
+STATE="utd"
+TIME="1767520899"
+SIZE="7978"
+ENDFILE
+VALUE "<project>\synthesis\_74hc04.so,so"
+STATE="utd"
+TIME="1767520899"
+SIZE="235"
+ENDFILE
+VALUE "<project>\synthesis\_74hc04.v,syn_hdl"
+STATE="utd"
+TIME="1767520908"
+SIZE="1261"
+ENDFILE
+VALUE "<project>\synthesis\_74hc04_syn.prj,prj"
+STATE="utd"
+TIME="1767520818"
+SIZE="635"
+ENDFILE
+ENDLIST
+LIST UsedFile
+ENDLIST
+LIST NewModulesInfo
+LIST "_74hc04::work"
+FILE "<project>\hdl\74hc04.v,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\testall_bench.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\_74hc04.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+LIST Impl2
+LiberoState=Post_Synthesis
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\_74hc04.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl2\_74hc04_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl2\_74hc04_report_pin_bynumber.txt,log"
+ENDLIST
+ENDLIST
+LIST "top_module::work"
+FILE "<project>\hdl\top_module.v,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\testall_bench.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSYNTHESIS(<project>\synthesis\top_module.edn,syn_edn)=StateSuccess
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+LIST Impl2
+LiberoState=Post_Layout
+ideDESIGNER(<project>\designer\impl2\top_module.adb,adb)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\top_module.edn,syn_edn)=StateSuccess
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl2\top_module_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl2\top_module_report_pin_bynumber.txt,log"
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+LIST top_module
+VALUE "<project>\stimulus\testall_bench.v,tb_hdl"
+ENDLIST
+LIST _74hc04
+VALUE "<project>\stimulus\testall_bench.v,tb_hdl"
+ENDLIST
+ENDLIST
+LIST Other_Association
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=true
+IncludeWaveDo=false
+Type=max
+RunTime=1000ns
+Resolution=1ps
+VsimOpt=
+EntityName=testall_bench
+TopInstanceName=<top>_0
+DoFileName=F:/Git/GDUTMeow/EDA2025-Libero-Experiment/Teamwork1/stimulus/run.do
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=false
+LogAllSignals=false
+DisablePulseFiltering=false
+DumpVCD=false
+VCDFileName=power.vcd
+VHDL2008=false
+Verilog2001=false
+SystemVerilog=false
+TimeUnit=1
+TimeUnitBase=ns
+Precision=100
+PrecisionBase=ps
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=FALSE
+LibraryPath=
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=FALSE
+PeriInitStandalone=FALSE
+EnableViewDraw=FALSE
+UpdateViewDrawIni=TRUE
+GenerateHDLFromSchematic=TRUE
+VmNetlistFlowOn=FALSE
+EnableDesignSeparationOn=FALSE
+EnableSETMitigationOn=FALSE
+DisplayFanoutLimit=10
+AbortFlowOnPDCErrorsOn=TRUE
+AbortFlowOnSDCErrorsOn=TRUE
+InstantiateInSmartDesign=TRUE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="SoftConsole"
+FUNCTION="SoftwareIDE"
+TOOL="SoftConsole"
+LOCATION="eclipse.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Synplify Pro ME"
+FUNCTION="Synthesis"
+TOOL="Synplify Pro ME"
+LOCATION="C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\synplify_pro.exe"
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="ModelSim ME"
+FUNCTION="Simulation"
+TOOL="ModelSim"
+LOCATION="C:\Microsemi\Libero_SoC_v11.9\Modelsim\win32acoem\modelsim.exe"
+PARAM=" -l testall_bench_postsynth_simulation.log "
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="FPExpress"
+FUNCTION="Program"
+TOOL="FlashPro"
+LOCATION="C:\Microsemi\Libero_SoC_v11.9\Designer\bin\FPExpress.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Identify Debugger"
+FUNCTION="IdentifyDebugger"
+TOOL="Identify Debugger"
+LOCATION="C:\Microsemi\Libero_SoC_v11.9\Identify\bin\identify_debugger.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+LIST "_74hc04::work"
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\_74hc04.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+LIST Impl2
+LiberoState=Post_Synthesis
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\_74hc04.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "top_module::work"
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSYNTHESIS(<project>\synthesis\top_module.edn,syn_edn)=StateSuccess
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+LIST Impl2
+LiberoState=Post_Layout
+ideDESIGNER(<project>\designer\impl2\top_module.adb,adb)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\top_module.edn,syn_edn)=StateSuccess
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+ENDLIST
+LIST OpenedFileList
+ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Compile:top_module_compile_log.rpt
+HDL;hdl\top_module.v;0
+StartPage;StartPage;0
+HDL;hdl\74hc86.v;0
+HDL;stimulus\74hc04_testbench.v;0
+HDL;stimulus\74hc86_testbench.v;0
+HDL;stimulus\testall_bench.v;0
+HDL;hdl\74hc04.v;0
+ACTIVEVIEW;Reports
+ENDLIST
+LIST ModuleSubBlockList
+LIST "_74hc04::work","hdl\74hc04.v","FALSE","FALSE"
+ENDLIST
+LIST "_74hc86::work","hdl\74hc86.v","FALSE","FALSE"
+ENDLIST
+LIST "top_module::work","hdl\top_module.v","FALSE","FALSE"
+SUBBLOCK "_74hc04::work","hdl\74hc04.v","FALSE","FALSE"
+SUBBLOCK "_74hc86::work","hdl\74hc86.v","FALSE","FALSE"
+ENDLIST
+LIST "test_74hc04::work","stimulus\74hc04_testbench.v","FALSE","TRUE"
+SUBBLOCK "_74hc04::work","hdl\74hc04.v","FALSE","FALSE"
+ENDLIST
+LIST "test_74hc86::work","stimulus\74hc86_testbench.v","FALSE","TRUE"
+SUBBLOCK "_74hc86::work","hdl\74hc86.v","FALSE","FALSE"
+ENDLIST
+LIST "testall_bench::work","stimulus\testall_bench.v","FALSE","TRUE"
+SUBBLOCK "test_74hc04::work","stimulus\74hc04_testbench.v","FALSE","TRUE"
+SUBBLOCK "test_74hc86::work","stimulus\74hc86_testbench.v","FALSE","TRUE"
+ENDLIST
+ENDLIST
+LIST ActiveTestBenchList
+LIST "_74hc04::work"
+ACTIVETESTBENCH "testall_bench::work","stimulus\testall_bench.v","FALSE"
+ENDLIST
+ENDLIST
+LIST IOTabList
+ENDLIST
+LIST FPTabList
+ENDLIST
+LIST TimingTabList
+ENDLIST
+LIST FDCTabList
+ENDLIST

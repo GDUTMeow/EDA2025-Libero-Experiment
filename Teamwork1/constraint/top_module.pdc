@@ -1,0 +1,73 @@
+# Microsemi Physical design constraints file
+
+# Version: v11.9 11.9.0.4
+
+# Design Name: top_module 
+
+# Input Netlist Format: edif 
+
+# Family: ProASIC3 , Die: A3P060 , Package: 100 VQFP , Speed grade: STD 
+
+# Date generated: Sun Jan 04 18:29:39 2026 
+
+
+#
+# IO banks setting
+#
+
+set_iobank Bank1 -vcci 3.30 -fixed no
+set_iobank Bank0 -vcci 3.30 -fixed no
+
+#
+# Local clock constraints
+#
+
+
+#
+# Region constraints
+#
+
+
+#
+# I/O constraints
+#
+
+set_io not_a -iostd LVTTL -REGISTER No -RES_PULL None -pinname 15 -fixed yes
+set_io not_b -iostd LVTTL -REGISTER No -RES_PULL None -pinname 11 -fixed yes
+set_io not_c -iostd LVTTL -REGISTER No -RES_PULL None -pinname 10 -fixed yes
+set_io not_d -iostd LVTTL -REGISTER No -RES_PULL None -pinname 8 -fixed yes
+set_io not_e -iostd LVTTL -REGISTER No -RES_PULL None -pinname 7 -fixed yes
+set_io not_f -iostd LVTTL -REGISTER No -RES_PULL None -pinname 6 -fixed yes
+set_io not_y1 -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 2 -fixed yes
+set_io not_y2 -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 3 -fixed yes
+set_io not_y3 -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 4 -fixed yes
+set_io not_y4 -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 46 -fixed yes
+set_io not_y5 -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 45 -fixed yes
+set_io not_y6 -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 44 -fixed yes
+set_io xor_a1 -iostd LVTTL -REGISTER No -RES_PULL None -pinname 58 -fixed yes
+set_io xor_a2 -iostd LVTTL -REGISTER No -RES_PULL None -pinname 59 -fixed yes
+set_io xor_b1 -iostd LVTTL -REGISTER No -RES_PULL None -pinname 60 -fixed yes
+set_io xor_b2 -iostd LVTTL -REGISTER No -RES_PULL None -pinname 61 -fixed yes
+set_io xor_c1 -iostd LVTTL -REGISTER No -RES_PULL None -pinname 62 -fixed yes
+set_io xor_c2 -iostd LVTTL -REGISTER No -RES_PULL None -pinname 63 -fixed yes
+set_io xor_d1 -iostd LVTTL -REGISTER No -RES_PULL None -pinname 64 -fixed yes
+set_io xor_d2 -iostd LVTTL -REGISTER No -RES_PULL None -pinname 65 -fixed yes
+set_io xor_y1 -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 43 -fixed yes
+set_io xor_y2 -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 42 -fixed yes
+set_io xor_y3 -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 41 -fixed yes
+set_io xor_y4 -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 40 -fixed yes
+
+#
+# Core cell constraints
+#
+
+set_location u_74hc86/y3 -fixed no 66 12
+set_location not_y1_pad_RNO -fixed no 3 17
+set_location not_y3_pad_RNO -fixed no 3 20
+set_location not_y2_pad_RNO -fixed no 3 18
+set_location not_y4_pad_RNO -fixed no 3 23
+set_location u_74hc86/y1 -fixed no 66 6
+set_location not_y5_pad_RNO -fixed no 36 16
+set_location not_y6_pad_RNO -fixed no 9 16
+set_location u_74hc86/y4 -fixed no 66 18
+set_location u_74hc86/y2 -fixed no 66 9
