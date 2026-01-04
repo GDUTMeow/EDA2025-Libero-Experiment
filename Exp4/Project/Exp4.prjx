@@ -39,18 +39,94 @@ KEY ActiveRoot "decoder2x4::work"
 LIST REVISIONS
 VALUE="Impl1",NUM=1
 VALUE="Impl2",NUM=2
-CURREV=2
+VALUE="Impl3",NUM=3
+CURREV=3
 ENDLIST
 LIST FileManager
+VALUE "<project>\designer\impl3\decoder2x4.adb,adb"
+STATE="utd"
+TIME="1766405640"
+SIZE="23552"
+ENDFILE
+VALUE "<project>\designer\impl3\decoder2x4.ide_des,ide_des"
+STATE="utd"
+TIME="1766405501"
+SIZE="216"
+ENDFILE
+VALUE "<project>\designer\impl3\decoder2x4.pdb,pdb"
+STATE="utd"
+TIME="1766405733"
+SIZE="14664"
+ENDFILE
+VALUE "<project>\designer\impl3\decoder2x4_ba.sdf,ba_sdf"
+STATE="utd"
+TIME="1766405714"
+SIZE="7082"
+ENDFILE
+VALUE "<project>\designer\impl3\decoder2x4_ba.v,ba_hdl"
+STATE="utd"
+TIME="1766405714"
+SIZE="2597"
+ENDFILE
+VALUE "<project>\designer\impl3\decoder2x4_compile_log.rpt,log"
+STATE="utd"
+TIME="1766405640"
+SIZE="7306"
+ENDFILE
+VALUE "<project>\designer\impl3\decoder2x4_placeroute_log.rpt,log"
+STATE="utd"
+TIME="1766405656"
+SIZE="2736"
+ENDFILE
 VALUE "<project>\hdl\dec2x4.v,hdl"
 STATE="utd"
 TIME="1764762889"
 SIZE="366"
 ENDFILE
+VALUE "<project>\simulation\run.do,do"
+STATE="utd"
+TIME="1766405507"
+SIZE="677"
+ENDFILE
+VALUE "<project>\simulation\testdecoder2x4_postsynth_simulation.log,log"
+STATE="utd"
+TIME="1766405600"
+SIZE="68"
+ENDFILE
+VALUE "<project>\simulation\testdecoder2x4_presynth_simulation.log,log"
+STATE="utd"
+TIME="1766405515"
+SIZE="68"
+ENDFILE
 VALUE "<project>\stimulus\testbench.v,tb_hdl"
 STATE="utd"
 TIME="1764758796"
 SIZE="684"
+ENDFILE
+VALUE "<project>\synthesis\decoder2x4.edn,syn_edn"
+STATE="utd"
+TIME="1766405587"
+SIZE="7566"
+ENDFILE
+VALUE "<project>\synthesis\decoder2x4.so,so"
+STATE="utd"
+TIME="1766405587"
+SIZE="244"
+ENDFILE
+VALUE "<project>\synthesis\decoder2x4.v,syn_hdl"
+STATE="utd"
+TIME="1766405593"
+SIZE="1074"
+ENDFILE
+VALUE "<project>\synthesis\decoder2x4_sdc.sdc,syn_sdc"
+STATE="utd"
+TIME="1766405587"
+SIZE="310"
+ENDFILE
+VALUE "<project>\synthesis\decoder2x4_syn.prj,prj"
+STATE="utd"
+TIME="1766405562"
+SIZE="647"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -63,7 +139,9 @@ VALUE "<project>\stimulus\testbench.v,tb_hdl"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
+LiberoState=Post_Synthesis
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\decoder2x4.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -73,7 +151,22 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 LIST Impl2
+LiberoState=Post_Synthesis
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\decoder2x4.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+LIST Impl3
+LiberoState=Post_Layout
+ideSTIMULUS=StateSuccess
+ideDESIGNER(<project>\designer\impl3\decoder2x4.adb,adb)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\decoder2x4.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -84,8 +177,8 @@ ENDUsed_File_List
 ENDLIST
 ENDLIST
 LIST PinReports
-VALUE "<project>\designer\impl1\decoder2x4_report_pin_byname.txt,log"
-VALUE "<project>\designer\impl1\decoder2x4_report_pin_bynumber.txt,log"
+VALUE "<project>\designer\impl3\decoder2x4_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl3\decoder2x4_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
 ENDLIST
@@ -162,8 +255,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -171,7 +264,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\Modelsim\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l testdecoder2x4_postsynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -198,7 +291,9 @@ ENDLIST
 LIST ProjectState5.1
 LIST "decoder2x4::work"
 LIST Impl1
+LiberoState=Post_Synthesis
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\decoder2x4.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -208,7 +303,22 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 LIST Impl2
+LiberoState=Post_Synthesis
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\decoder2x4.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+LIST Impl3
+LiberoState=Post_Layout
+ideSTIMULUS=StateSuccess
+ideDESIGNER(<project>\designer\impl3\decoder2x4.adb,adb)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\decoder2x4.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -231,8 +341,11 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Place and Route:decoder2x4_placeroute_log.rpt
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+HDL;hdl\dec2x4.v;0
+ACTIVEVIEW;hdl\dec2x4.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "decoder2x4::work","hdl\dec2x4.v","FALSE","FALSE"
