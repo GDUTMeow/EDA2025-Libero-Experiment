@@ -1,0 +1,63 @@
+# Microsemi Physical design constraints file
+
+# Version: v11.9 11.9.0.4
+
+# Design Name: dynamic_led 
+
+# Input Netlist Format: edif 
+
+# Family: ProASIC3 , Die: A3P060 , Package: 100 VQFP , Speed grade: STD 
+
+# Date generated: Mon Jan 05 16:28:19 2026 
+
+
+#
+# IO banks setting
+#
+
+set_iobank Bank1 -vcci 3.30 -fixed no
+set_iobank Bank0 -vcci 3.30 -fixed no
+
+#
+# Local clock constraints
+#
+
+assign_quadrant_clock -net Clk_c -quadrant  LR -fixed yes -color 16744448
+
+#
+# Region constraints
+#
+
+
+#
+# I/O constraints
+#
+
+set_io Clk -iostd LVTTL -REGISTER No -RES_PULL None -pinname 46 -fixed yes
+set_io Rst -iostd LVTTL -REGISTER No -RES_PULL None -pinname 15 -fixed yes
+set_io Seg\[0\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 2 -fixed yes
+set_io Seg\[1\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 4 -fixed yes
+set_io Seg\[2\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 6 -fixed yes
+set_io Seg\[3\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 8 -fixed yes
+set_io Seg\[4\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 11 -fixed yes
+set_io Seg\[5\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 19 -fixed yes
+set_io Seg\[6\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 21 -fixed yes
+set_io Seg\[7\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 23 -fixed yes
+set_io Sel\[0\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 60 -fixed yes
+set_io Sel\[1\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 59 -fixed yes
+set_io Sel\[2\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 58 -fixed yes
+set_io Sel\[3\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -pinname 57 -fixed yes
+
+#
+# Core cell constraints
+#
+
+set_location count\[1\] -fixed no 66 10
+set_location count\[0\] -fixed no 64 10
+set_location u_hc4511/Seg_c_i\[5\] -fixed no 14 9
+set_location un3_count_1_SUM1 -fixed no 65 10
+set_location u_hc4511/Disp_data8 -fixed no 63 7
+set_location u_hc4511/Disp_data9 -fixed no 66 7
+set_location count_RNO\[0\] -fixed no 64 9
+set_location u_hc4511/Disp_data11 -fixed no 66 4
+set_location u_hc4511/Disp_data10 -fixed no 66 5
