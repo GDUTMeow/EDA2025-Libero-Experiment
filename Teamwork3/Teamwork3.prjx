@@ -43,98 +43,128 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\constraint\top_module.pdc,pdc"
 STATE="utd"
-TIME="1767545169"
-SIZE="1833"
+TIME="1767606527"
+SIZE="22875"
 ENDFILE
 VALUE "<project>\designer\impl1\top_module.adb,adb"
 STATE="utd"
-TIME="1767544465"
-SIZE="71168"
+TIME="1767599677"
+SIZE="153600"
 ENDFILE
 VALUE "<project>\designer\impl1\top_module.ide_des,ide_des"
 STATE="utd"
-TIME="1767541527"
-SIZE="213"
+TIME="1767599677"
+SIZE="1003"
 ENDFILE
 VALUE "<project>\designer\impl1\top_module.pdb,pdb"
 STATE="utd"
-TIME="1767545193"
-SIZE="19284"
+TIME="1767606527"
+SIZE="25101"
 ENDFILE
 VALUE "<project>\designer\impl1\top_module_ba.sdf,ba_sdf"
-STATE="utd"
+STATE="ood"
 TIME="1767545184"
 SIZE="68059"
 ENDFILE
-VALUE "<project>\designer\impl1\top_module_ba.v,ba_hdl"
-STATE="utd"
-TIME="1767545184"
-SIZE="28441"
-ENDFILE
 VALUE "<project>\designer\impl1\top_module_compile_log.rpt,log"
 STATE="utd"
-TIME="1767544465"
-SIZE="8682"
+TIME="1767606469"
+SIZE="8446"
+ENDFILE
+VALUE "<project>\designer\impl1\top_module_fp\projectData\top_module.pdb,pdb"
+STATE="utd"
+TIME="1767604784"
+SIZE="25331"
+ENDFILE
+VALUE "<project>\designer\impl1\top_module_fp\top_module.pro,pro"
+STATE="utd"
+TIME="1767604784"
+SIZE="2434"
+ENDFILE
+VALUE "<project>\designer\impl1\top_module_placeroute_log.rpt,log"
+STATE="utd"
+TIME="1767606485"
+SIZE="2489"
+ENDFILE
+VALUE "<project>\designer\impl1\top_module_prgdata_log.rpt,log"
+STATE="utd"
+TIME="1767606527"
+SIZE="753"
+ENDFILE
+VALUE "<project>\designer\impl1\top_module_verifytiming_log.rpt,log"
+STATE="utd"
+TIME="1767606520"
+SIZE="1193"
 ENDFILE
 VALUE "<project>\designer\impl1\_1s_clock.ide_des,ide_des"
 STATE="utd"
 TIME="1767541305"
 SIZE="212"
 ENDFILE
+VALUE "<project>\hdl\74HC4511.v,hdl"
+STATE="utd"
+TIME="1767602104"
+SIZE="1741"
+ENDFILE
 VALUE "<project>\hdl\clock.v,hdl"
 STATE="utd"
-TIME="1767539973"
-SIZE="783"
+TIME="1767606340"
+SIZE="651"
 ENDFILE
 VALUE "<project>\hdl\light.v,hdl"
 STATE="utd"
 TIME="1767544333"
 SIZE="3131"
 ENDFILE
+VALUE "<project>\hdl\timer.v,hdl"
+STATE="utd"
+TIME="1767605280"
+SIZE="4696"
+ENDFILE
 VALUE "<project>\hdl\top_module.v,hdl"
 STATE="utd"
-TIME="1767544193"
-SIZE="552"
+TIME="1767606365"
+SIZE="759"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1767543099"
-SIZE="796"
+TIME="1767596905"
+SIZE="684"
 ENDFILE
-VALUE "<project>\simulation\testbench_postsynth_simulation.log,log"
+VALUE "<project>\simulation\testbench_presynth_simulation.log,log"
 STATE="utd"
-TIME="1767544349"
-SIZE="3850"
+TIME="1767606377"
+SIZE="68"
 ENDFILE
 VALUE "<project>\stimulus\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1767544344"
-SIZE="2689"
+TIME="1767603873"
+SIZE="2960"
 ENDFILE
 VALUE "<project>\synthesis\top_module.edn,syn_edn"
 STATE="utd"
-TIME="1767543427"
-SIZE="59417"
+TIME="1767596885"
+SIZE="102278"
 ENDFILE
 VALUE "<project>\synthesis\top_module.so,so"
 STATE="utd"
-TIME="1767543427"
+TIME="1767596885"
 SIZE="241"
 ENDFILE
 VALUE "<project>\synthesis\top_module.v,syn_hdl"
-STATE="utd"
-TIME="1767543433"
-SIZE="16302"
+STATE="ood"
+TIME="1767596904"
+SIZE="28411"
 ENDFILE
 VALUE "<project>\synthesis\top_module_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1767543427"
+TIME="1767596885"
 SIZE="399"
 ENDFILE
 VALUE "<project>\synthesis\top_module_syn.prj,prj"
 STATE="utd"
-TIME="1767543415"
-SIZE="815"
+TIME="1767596886"
+SIZE="2000"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -167,8 +197,8 @@ LIST ProjectState5.1
 LIST Impl1
 LiberoState=Post_Layout
 ideSTIMULUS=StateSuccess
-ideDESIGNER(<project>\designer\impl1\top_module.adb,adb)=StateSuccess
 ideSYNTHESIS(<project>\synthesis\top_module.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\top_module.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -269,7 +299,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\Modelsim\win32acoem\modelsim.exe"
-PARAM=" -l testbench_postsynth_simulation.log "
+PARAM=" -l testbench_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -310,8 +340,8 @@ LIST "top_module::work"
 LIST Impl1
 LiberoState=Post_Layout
 ideSTIMULUS=StateSuccess
-ideDESIGNER(<project>\designer\impl1\top_module.adb,adb)=StateSuccess
 ideSYNTHESIS(<project>\synthesis\top_module.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\top_module.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -335,19 +365,26 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Compile:top_module_compile_log.rpt
+ReportsCurrentItem;Generate Programming Data:top_module_prgdata_log.rpt
 HDL;hdl\clock.v;0
 HDL;hdl\light.v;0
 HDL;hdl\top_module.v;0
 StartPage;StartPage;0
 HDL;stimulus\testbench.v;0
+HDL;hdl\timer.v;0
 ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "_1s_clock::work","hdl\clock.v","FALSE","FALSE"
 ENDLIST
+LIST "HC4511::work","hdl\74HC4511.v","FALSE","FALSE"
+ENDLIST
+LIST "timer::work","hdl\timer.v","FALSE","FALSE"
+SUBBLOCK "HC4511::work","hdl\74HC4511.v","FALSE","FALSE"
+ENDLIST
 LIST "top_module::work","hdl\top_module.v","FALSE","FALSE"
 SUBBLOCK "_1s_clock::work","hdl\clock.v","FALSE","FALSE"
+SUBBLOCK "timer::work","hdl\timer.v","FALSE","FALSE"
 SUBBLOCK "two_lights::work","hdl\light.v","FALSE","FALSE"
 ENDLIST
 LIST "two_lights::work","hdl\light.v","FALSE","FALSE"

@@ -41,20 +41,65 @@ VALUE="Impl1",NUM=1
 CURREV=1
 ENDLIST
 LIST FileManager
+VALUE "<project>\constraint\dynamic_led.pdc,pdc"
+STATE="utd"
+TIME="1767601699"
+SIZE="2635"
+ENDFILE
+VALUE "<project>\designer\impl1\dynamic_led.adb,adb"
+STATE="utd"
+TIME="1767599989"
+SIZE="36864"
+ENDFILE
 VALUE "<project>\designer\impl1\dynamic_led.ide_des,ide_des"
 STATE="utd"
 TIME="1767598860"
 SIZE="210"
 ENDFILE
+VALUE "<project>\designer\impl1\dynamic_led.pdb,pdb"
+STATE="utd"
+TIME="1767601012"
+SIZE="16192"
+ENDFILE
+VALUE "<project>\designer\impl1\dynamic_led_ba.sdf,ba_sdf"
+STATE="ood"
+TIME="1767600057"
+SIZE="14233"
+ENDFILE
+VALUE "<project>\designer\impl1\dynamic_led_compile_log.rpt,log"
+STATE="utd"
+TIME="1767599989"
+SIZE="7641"
+ENDFILE
+VALUE "<project>\designer\impl1\dynamic_led_fp\dynamic_led.pro,pro"
+STATE="utd"
+TIME="1767600159"
+SIZE="2041"
+ENDFILE
+VALUE "<project>\designer\impl1\dynamic_led_placeroute_log.rpt,log"
+STATE="utd"
+TIME="1767600992"
+SIZE="2517"
+ENDFILE
+VALUE "<project>\designer\impl1\dynamic_led_prgdata_log.rpt,log"
+STATE="utd"
+TIME="1767601012"
+SIZE="734"
+ENDFILE
+VALUE "<project>\designer\impl1\dynamic_led_verifytiming_log.rpt,log"
+STATE="utd"
+TIME="1767601006"
+SIZE="1193"
+ENDFILE
 VALUE "<project>\hdl\74HC4511.v,hdl"
 STATE="utd"
-TIME="1767599610"
-SIZE="1473"
+TIME="1767600947"
+SIZE="1741"
 ENDFILE
 VALUE "<project>\hdl\dynamic_led.v,hdl"
 STATE="utd"
-TIME="1767599482"
-SIZE="1393"
+TIME="1767600941"
+SIZE="1399"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
@@ -65,6 +110,31 @@ VALUE "<project>\stimulus\testbench.v,tb_hdl"
 STATE="utd"
 TIME="1767599471"
 SIZE="453"
+ENDFILE
+VALUE "<project>\synthesis\dynamic_led.edn,syn_edn"
+STATE="utd"
+TIME="1767599952"
+SIZE="14916"
+ENDFILE
+VALUE "<project>\synthesis\dynamic_led.so,so"
+STATE="utd"
+TIME="1767599952"
+SIZE="239"
+ENDFILE
+VALUE "<project>\synthesis\dynamic_led.v,syn_hdl"
+STATE="ood"
+TIME="1767599955"
+SIZE="2492"
+ENDFILE
+VALUE "<project>\synthesis\dynamic_led_sdc.sdc,syn_sdc"
+STATE="utd"
+TIME="1767599952"
+SIZE="400"
+ENDFILE
+VALUE "<project>\synthesis\dynamic_led_syn.prj,prj"
+STATE="utd"
+TIME="1767599940"
+SIZE="724"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -77,7 +147,10 @@ VALUE "<project>\stimulus\testbench.v,tb_hdl"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
+LiberoState=Post_Layout
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\dynamic_led.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\dynamic_led.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -86,6 +159,10 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl1\dynamic_led_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl1\dynamic_led_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
 ENDLIST
@@ -171,7 +248,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\Modelsim\win32acoem\modelsim.exe"
-PARAM=" -l testbench_presynth_simulation.log "
+PARAM=" -l testbench_postlayout_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -198,7 +275,10 @@ ENDLIST
 LIST ProjectState5.1
 LIST "dynamic_led::work"
 LIST Impl1
+LiberoState=Post_Layout
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\dynamic_led.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\dynamic_led.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -222,11 +302,12 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Project Summary:ExpX3.log
+ReportsCurrentItem;dynamic_led reports:Synthesize
 StartPage;StartPage;0
 HDL;hdl\dynamic_led.v;0
 HDL;stimulus\testbench.v;0
-ACTIVEVIEW;stimulus\testbench.v
+HDL;hdl\74HC4511.v;0
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "dynamic_led::work","hdl\dynamic_led.v","FALSE","FALSE"

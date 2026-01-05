@@ -9,15 +9,14 @@ module _74hc283(
     always @(a0, a1, a2, a3,
         b0, b1, b2, b3, cin
     ) begin
-        // Calculate the result
-        s0 = a0 ^ b0 ^ cin;
-        s1 = a1 ^ b1 ^ s0;
-        s2 = a2 ^ b2 ^ s1;
-        s3 = a3 ^ b3 ^ s2;
-        cout = (a3 & b3) | (s2 & (a3 ^ b3)) | (s1 & (a2 ^ b2) & (a3 ^ b3)) | (s0 & (a1 ^ b1) & (a2 ^ b2) & (a3 ^ b3));
+        // // Calculate the result
+        // s0 = a0 ^ b0 ^ cin;
+        // s1 = a1 ^ b1 ^ s0;
+        // s2 = a2 ^ b2 ^ s1;
+        // s3 = a3 ^ b3 ^ s2;
+        // cout = (a3 & b3) | (s2 & (a3 ^ b3)) | (s1 & (a2 ^ b2) & (a3 ^ b3)) | (s0 & (a1 ^ b1) & (a2 ^ b2) & (a3 ^ b3));
 
         // More simple way to calculate
-        // {s0, s1, s2, s3} = {a0, a1, a2, a3} + {b0, b1, b2, b3} + cin;
-        // cout = ({a0, a1, a2, a3} + {b0, b1, b2, b3} + cin) > 4'b1111;
+        {cout, s3, s2, s1, s0} = {1'b0, a3, a2, a1, a0} + {1'b0, b3, b2, b1, b0} + {4'b0000, cin};
     end
 endmodule

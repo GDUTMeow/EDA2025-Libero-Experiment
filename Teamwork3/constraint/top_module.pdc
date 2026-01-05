@@ -8,7 +8,7 @@
 
 # Family: ProASIC3 , Die: A3P060 , Package: 100 VQFP , Speed grade: STD 
 
-# Date generated: Mon Jan 05 00:46:09 2026 
+# Date generated: Mon Jan 05 18:14:00 2026 
 
 
 
@@ -18,17 +18,21 @@
 define_group -name Traffic\ Light\ 1
 define_group -name Traffic\ Light\ 2
 define_group -name Functions
+define_group -name Timer\ Segment\ Output
+define_group -name Timer\ Selection\ Output
 
 #
 # IO banks setting
 #
 
 set_iobank Bank1 -vcci 3.30 -fixed no
+set_iobank Bank0 -vcci 3.30 -fixed no
 
 #
 # Local clock constraints
 #
 
+assign_quadrant_clock -net Clk_c -quadrant  LL -fixed yes -color 16744448
 
 #
 # Region constraints
@@ -45,6 +49,22 @@ set_io Clk -iostd LVTTL -REGISTER No -RES_PULL None -GROUP_NAME Functions -pinna
 set_io Rst -iostd LVTTL -REGISTER No -RES_PULL None -GROUP_NAME Functions -pinname 15 -fixed yes
 set_io en -iostd LVTTL -REGISTER No -RES_PULL None -GROUP_NAME Functions -pinname 11 -fixed yes
 
+# User Group Timer Segment Output
+set_io Seg\[0\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME Timer\ Segment\ Output -pinname 77 -fixed yes
+set_io Seg\[1\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME Timer\ Segment\ Output -pinname 79 -fixed yes
+set_io Seg\[2\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME Timer\ Segment\ Output -pinname 81 -fixed yes
+set_io Seg\[3\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME Timer\ Segment\ Output -pinname 83 -fixed yes
+set_io Seg\[4\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME Timer\ Segment\ Output -pinname 85 -fixed yes
+set_io Seg\[5\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME Timer\ Segment\ Output -pinname 90 -fixed yes
+set_io Seg\[6\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME Timer\ Segment\ Output -pinname 92 -fixed yes
+set_io Seg\[7\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME Timer\ Segment\ Output -pinname 94 -fixed yes
+
+# User Group Timer Selection Output
+set_io Sel\[0\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME Timer\ Selection\ Output -pinname 33 -fixed yes
+set_io Sel\[1\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME Timer\ Selection\ Output -pinname 31 -fixed yes
+set_io Sel\[2\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME Timer\ Selection\ Output -pinname 29 -fixed yes
+set_io Sel\[3\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME Timer\ Selection\ Output -pinname 27 -fixed yes
+
 # User Group Traffic Light 1
 set_io G1 -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME Traffic\ Light\ 1 -pinname 4 -fixed yes
 set_io R1 -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME Traffic\ Light\ 1 -pinname 2 -fixed yes
@@ -59,3 +79,293 @@ set_io Y2 -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKE
 # Core cell constraints
 #
 
+set_location u_two_lights/state_RNIVDDF\[0\] -fixed no 34 12
+set_location u_timer/un3_clk_divider_I_20 -fixed no 11 3
+set_location u_timer/light1_count_RNIT4OI\[2\] -fixed no 10 10
+set_location u_two_lights/state\[3\] -fixed no 32 10
+set_location u_two_lights/clk_divider_RNO\[6\] -fixed no 29 4
+set_location u_timer/Scanning_count_RNIAQPVIB\[0\] -fixed no 42 17
+set_location u_timer/u_4511/SM_8S_2_i\[1\] -fixed no 53 15
+set_location u_two_lights/state_RNO_0\[0\] -fixed no 33 10
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un46_sum_ADD_6x6_slow_I1_CO1 -fixed no 45 14
+set_location u_two_lights/sec_counter_RNILG1O6\[3\] -fixed no 30 10
+set_location u_timer/un3_clk_divider_I_9 -fixed no 7 11
+set_location u_timer/un7_Display_data_if_generate_plus.mult1_un39_sum_ADD_6x6_slow_I2_un5_CO1 -fixed no 27 19
+set_location u_two_lights/sec_counter\[1\] -fixed no 27 9
+set_location u_timer/un7_Display_data_if_generate_plus.mult1_un46_sum_ADD_6x6_slow_I1_CO1 -fixed no 40 19
+set_location u_timer/u_4511/SM_8S_2_i_a4_0\[4\] -fixed no 51 17
+set_location u_two_lights/clk_divider\[8\] -fixed no 28 5
+set_location u_timer/un3_clk_divider_I_15 -fixed no 8 5
+set_location u_timer/light1_count_RNO_0\[3\] -fixed no 16 12
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un46_sum_ADD_6x6_slow_I3_CO1_0_tz -fixed no 43 13
+set_location u_two_lights/state_RNIVASD1\[1\] -fixed no 31 9
+set_location u_timer/un7_Display_data_if_generate_plus.mult1_un39_sum_ADD_6x6_slow_I1_S -fixed no 38 18
+set_location u_two_lights/state_RNIMOQI\[0\] -fixed no 35 12
+set_location u_two_lights/sec_counter\[4\] -fixed no 25 11
+set_location u_timer/light2_count_RNO_0\[5\] -fixed no 20 8
+set_location Rst_pad_RNIDFK3 -fixed no 2 15
+set_location u_timer/Scanning_count_RNIQF97K4\[1\] -fixed no 41 14
+set_location u_timer/light2_count_RNO\[5\] -fixed no 18 7
+set_location u_timer/light1_count_RNIS3OI\[0\] -fixed no 15 9
+set_location u_timer/clk_divider_RNI699A\[9\] -fixed no 11 6
+set_location u_two_lights/clk_divider_RNITPEU\[1\] -fixed no 31 7
+set_location u_timer/light2_count_RNO_0\[1\] -fixed no 19 3
+set_location u_timer/light2_count_RNO_1\[5\] -fixed no 21 7
+set_location u_timer/light2_state\[1\] -fixed no 15 7
+set_location u_two_lights/sec_counter_RNIC94O\[5\] -fixed no 29 8
+set_location u_timer/u_4511/SM_8S_2_i\[4\] -fixed no 51 16
+set_location u_two_lights/clk_divider\[0\] -fixed no 30 6
+set_location u_two_lights/clk_divider_RNIC0SP3\[7\] -fixed no 29 3
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un39_sum_ADD_6x6_slow_I1_S -fixed no 44 12
+set_location u_two_lights/clk_divider_RNIGAUS1\[3\] -fixed no 29 6
+set_location u_timer/un3_clk_divider_I_21 -fixed no 13 5
+set_location u_timer/Scanning_count_RNI9LVR_0\[0\] -fixed no 8 2
+set_location u_timer/light1_count_RNO\[1\] -fixed no 12 11
+set_location u_timer/clk_divider\[6\] -fixed no 10 5
+set_location u_timer/Scanning_count_RNI9LVR_1\[0\] -fixed no 18 2
+set_location u_timer/light2_count\[4\] -fixed no 19 8
+set_location u_two_lights/sec_counter_RNO_0\[2\] -fixed no 25 8
+set_location u_timer/clk_divider_RNI3CRU\[8\] -fixed no 12 7
+set_location u_timer/clk_divider\[8\] -fixed no 11 8
+set_location u_timer/un3_clk_divider_I_4 -fixed no 4 9
+set_location u_timer/un3_clk_divider_I_12 -fixed no 10 12
+set_location u_timer/light2_count_RNO\[4\] -fixed no 18 8
+set_location u_timer/Scanning_count_RNINK3E85\[1\] -fixed no 43 18
+set_location u_two_lights/state_RNO\[3\] -fixed no 33 9
+set_location u_two_lights/state_RNO\[1\] -fixed no 34 10
+set_location u_timer/un3_clk_divider_I_19 -fixed no 10 4
+set_location u_timer/Scanning_count_RNI9LVR_2\[0\] -fixed no 10 2
+set_location u_timer/Scanning_count_RNI3TOHB5\[0\] -fixed no 43 17
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un39_sum_ADD_6x6_slow_I2_S -fixed no 44 10
+set_location u_timer/u_4511/SM_8S_2_i\[0\] -fixed no 57 18
+set_location u_timer/clk_divider\[0\] -fixed no 5 8
+set_location u_two_lights/sec_counter_RNIL52QE\[3\] -fixed no 29 10
+set_location u_timer/light2_count_RNIUL0T\[0\] -fixed no 21 5
+set_location u_timer/light1_count_RNO_0\[5\] -fixed no 16 11
+set_location u_timer/light2_count_RNO\[1\] -fixed no 19 7
+set_location u_timer/light1_count_RNIUGC32\[0\] -fixed no 10 9
+set_location u_timer/Scanning_count_RNI8ELL2\[1\] -fixed no 43 16
+set_location u_timer/light2_count\[3\] -fixed no 16 5
+set_location u_timer/clk_divider_RNO\[8\] -fixed no 12 9
+set_location u_two_lights/state_RNI9I062\[0\] -fixed no 31 10
+set_location u_timer/light1_count\[4\] -fixed no 14 8
+set_location u_timer/light2_count\[1\] -fixed no 20 7
+set_location u_two_lights/state\[4\] -fixed no 34 4
+set_location u_two_lights/clk_divider_RNID8MD1\[2\] -fixed no 32 6
+set_location u_timer/u_4511/SM_8S_2_i_0\[6\] -fixed no 55 17
+set_location u_two_lights/sec_counter_RNIP72C\[4\] -fixed no 26 11
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un46_sum_ADD_6x6_slow_I1_S -fixed no 44 18
+set_location u_timer/light2_state_RNO\[1\] -fixed no 18 4
+set_location u_timer/u_4511/SM_8S_2_i_a4_0\[0\] -fixed no 58 18
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un1_sum_I_18 -fixed no 44 19
+set_location u_two_lights/clk_divider\[1\] -fixed no 32 8
+set_location u_timer/Scanning_count\[1\] -fixed no 9 2
+set_location u_two_lights/state_RNI0FDF\[0\] -fixed no 32 11
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un46_sum_ADD_6x6_slow_I1_CO1_1 -fixed no 44 14
+set_location u_two_lights/state_RNO_0\[4\] -fixed no 35 4
+set_location u_two_lights/sec_counter_RNITB2C\[7\] -fixed no 31 13
+set_location u_two_lights/sec_counter_RNO\[4\] -fixed no 26 10
+set_location u_two_lights/clk_divider_RNO\[0\] -fixed no 28 8
+set_location u_timer/light1_state_RNO\[1\] -fixed no 14 11
+set_location u_timer/light1_count\[1\] -fixed no 13 11
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un39_sum_ADD_6x6_slow_I2_un1_CO1 -fixed no 43 8
+set_location u_two_lights/clk_divider_RNI96FU\[9\] -fixed no 28 7
+set_location u_timer/Scanning_count\[0\] -fixed no 8 11
+set_location u_timer/light1_state\[1\] -fixed no 15 5
+set_location u_timer/clk_divider_RNO\[3\] -fixed no 6 7
+set_location u_timer/u_4511/SM_8S_2_0_0\[2\] -fixed no 52 17
+set_location u_timer/clk_divider\[7\] -fixed no 11 5
+set_location u_timer/light1_state_RNI9AD9\[1\] -fixed no 14 5
+set_location u_two_lights/state_RNIRRO75\[1\] -fixed no 31 8
+set_location u_timer/un7_Display_data_if_generate_plus.mult1_un1_sum_I_16 -fixed no 41 18
+set_location u_timer/light1_count_RNO_0\[2\] -fixed no 16 13
+set_location u_two_lights/state_RNINPQI\[1\] -fixed no 35 9
+set_location u_two_lights/clk_divider_RNO_0\[9\] -fixed no 28 4
+set_location u_timer/u_4511/SM_8S_2_0_o2\[2\] -fixed no 53 16
+set_location u_timer/u_4511/SM_8S_2_i_a4\[3\] -fixed no 55 19
+set_location u_timer/un3_clk_divider_I_22 -fixed no 10 11
+set_location u_timer/un3_clk_divider_I_14 -fixed no 7 6
+set_location u_timer/un7_Display_data_if_generate_plus.mult1_un39_sum_ADD_6x6_slow_I2_S -fixed no 28 17
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un46_sum_ADD_6x6_slow_I2_un1_CO1_1 -fixed no 44 13
+set_location u_two_lights/sec_counter_RNO_0\[4\] -fixed no 27 12
+set_location u_timer/u_4511/SM_8S_2_0_a2\[2\] -fixed no 56 18
+set_location u_two_lights/clk_divider\[9\] -fixed no 27 6
+set_location u_two_lights/sec_counter_RNINI1O6\[3\] -fixed no 30 9
+set_location u_timer/un7_Display_data_if_generate_plus.mult1_un1_sum_I_6 -fixed no 41 19
+set_location u_two_lights/clk_divider_RNO\[3\] -fixed no 26 7
+set_location u_timer/clk_divider\[2\] -fixed no 7 9
+set_location u_two_lights/sec_counter_RNIVA641\[3\] -fixed no 28 13
+set_location u_timer/un7_Display_data_if_generate_plus.mult1_un39_sum_ADD_6x6_slow_I3_S_0 -fixed no 26 19
+set_location u_timer/u_4511/SM_8S_2_i_a2\[3\] -fixed no 54 18
+set_location u_two_lights/sec_counter_RNIJ12C\[2\] -fixed no 26 9
+set_location u_timer/clk_divider_RNIOTHK\[1\] -fixed no 8 8
+set_location u_timer/clk_divider\[9\] -fixed no 12 5
+set_location u_timer/u_4511/SM_8S_2_i\[3\] -fixed no 54 19
+set_location u_timer/clk_divider_RNO\[6\] -fixed no 9 5
+set_location u_timer/light1_count_RNO\[4\] -fixed no 13 8
+set_location u_timer/light2_count_RNO\[0\] -fixed no 17 6
+set_location u_timer/clk_divider_RNIPR8A\[0\] -fixed no 7 8
+set_location u_two_lights/sec_counter_RNIJ12C\[3\] -fixed no 28 12
+set_location u_two_lights/state_RNI3IDF\[2\] -fixed no 35 10
+set_location u_two_lights/clk_divider_RNI3QCR2\[5\] -fixed no 31 3
+set_location u_timer/u_4511/SM_8S_2_i\[6\] -fixed no 54 17
+set_location u_two_lights/state_RNO_0\[1\] -fixed no 34 9
+set_location u_two_lights/clk_divider\[3\] -fixed no 25 6
+set_location u_two_lights/sec_counter_RNO_0\[3\] -fixed no 27 13
+set_location u_two_lights/sec_counter_RNO_0\[7\] -fixed no 29 13
+set_location u_timer/un7_Display_data_if_generate_plus.mult1_un39_sum_ADD_6x6_slow_I2_un1_CO1_0 -fixed no 28 19
+set_location u_timer/light1_count_RNO\[5\] -fixed no 12 10
+set_location u_two_lights/sec_counter_RNIL1K86\[5\] -fixed no 34 7
+set_location u_two_lights/sec_counter_RNI9OFG5\[3\] -fixed no 33 8
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un32_sum_ADD_6x6_slow_I1_S -fixed no 43 9
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un1_sum_I_14 -fixed no 45 18
+set_location u_two_lights/clk_divider_RNI0DF35_0\[2\] -fixed no 34 5
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un39_sum_ADD_6x6_slow_I3_un5_CO1 -fixed no 42 10
+set_location u_timer/light2_state_RNIBSLJ\[1\] -fixed no 16 7
+set_location u_timer/clk_divider_RNIAGIK\[8\] -fixed no 10 7
+set_location u_two_lights/clk_divider_RNIC6US1\[2\] -fixed no 31 6
+set_location u_timer/clk_divider_RNI2E491\[8\] -fixed no 9 7
+set_location u_two_lights/sec_counter\[7\] -fixed no 31 12
+set_location u_timer/un3_clk_divider_I_5 -fixed no 6 11
+set_location u_two_lights/sec_counter_RNIV43I\[4\] -fixed no 26 8
+set_location u_timer/light1_state\[0\] -fixed no 8 9
+set_location u_timer/u_4511/SM_8S_2_i_a4_1\[0\] -fixed no 56 19
+set_location u_timer/un7_Display_data_if_generate_plus.mult1_un1_sum_I_12 -fixed no 43 15
+set_location u_timer/un2_Scanning_count_1_SUM1 -fixed no 9 3
+set_location u_timer/u_4511/SM_8S_2_i_a4_1_1\[6\] -fixed no 53 18
+set_location u_timer/light2_count_RNI47623\[0\] -fixed no 20 5
+set_location u_timer/clk_divider_RNI2CHU1\[8\] -fixed no 13 6
+set_location u_two_lights/state_RNIOQQI\[2\] -fixed no 36 8
+set_location u_timer/light2_count\[2\] -fixed no 19 5
+set_location u_timer/Scanning_count_RNILQ5VK4\[1\] -fixed no 42 14
+set_location u_two_lights/state\[0\] -fixed no 33 12
+set_location u_timer/Scanning_count_RNI8IAQ75\[0\] -fixed no 41 15
+set_location u_timer/light1_count_RNIM5G51\[3\] -fixed no 17 10
+set_location u_timer/clk_divider_RNIPQPM3\[0\] -fixed no 10 8
+set_location u_two_lights/clk_divider_RNIG85C2\[4\] -fixed no 32 4
+set_location u_two_lights/clk_divider\[2\] -fixed no 32 7
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un32_sum_ADD_6x6_slow_I3_S -fixed no 43 11
+set_location u_timer/light2_count_RNO_0\[2\] -fixed no 20 4
+set_location u_timer/light1_count\[3\] -fixed no 10 6
+set_location u_two_lights/state_RNO_1\[4\] -fixed no 33 4
+set_location u_timer/un3_clk_divider_I_13 -fixed no 7 10
+set_location u_two_lights/sec_counter_RNO\[2\] -fixed no 28 9
+set_location u_two_lights/sec_counter\[2\] -fixed no 27 8
+set_location u_two_lights/sec_counter_RNO\[0\] -fixed no 30 11
+set_location u_timer/clk_divider_RNO\[7\] -fixed no 12 4
+set_location u_timer/Scanning_count_RNO\[0\] -fixed no 9 12
+set_location u_two_lights/clk_divider_RNO\[2\] -fixed no 33 6
+set_location u_two_lights/clk_divider\[4\] -fixed no 27 7
+set_location u_timer/light2_count_RNO_0\[3\] -fixed no 15 6
+set_location u_two_lights/sec_counter_RNO\[3\] -fixed no 29 11
+set_location u_timer/un3_clk_divider_I_16 -fixed no 8 4
+set_location u_two_lights/sec_counter\[6\] -fixed no 29 12
+set_location u_timer/light2_count_RNO_0\[4\] -fixed no 19 9
+set_location u_two_lights/clk_divider_RNI85FU\[5\] -fixed no 31 4
+set_location u_timer/clk_divider_RNIRT8A\[1\] -fixed no 9 9
+set_location u_two_lights/sec_counter\[3\] -fixed no 30 12
+set_location u_timer/light2_count_RNO\[3\] -fixed no 16 6
+set_location u_two_lights/clk_divider_RNO\[9\] -fixed no 27 5
+set_location u_two_lights/state_RNO_0\[2\] -fixed no 34 8
+set_location u_timer/u_4511/SM_8S_2_0_m2\[2\] -fixed no 52 16
+set_location u_timer/light1_count_RNO_0\[1\] -fixed no 14 12
+set_location u_two_lights/sec_counter\[5\] -fixed no 26 12
+set_location u_timer/un3_clk_divider_I_24 -fixed no 12 8
+set_location u_two_lights/sec_counter_RNO_0\[5\] -fixed no 25 9
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un46_sum_ADD_6x6_slow_I2_S -fixed no 45 13
+set_location u_timer/light2_count_RNIVM0T\[2\] -fixed no 19 4
+set_location u_timer/clk_divider_RNIVGJL4\[0\] -fixed no 17 7
+set_location u_two_lights/clk_divider_RNINCKA3\[6\] -fixed no 30 3
+set_location u_timer/light2_count_RNO\[2\] -fixed no 18 6
+set_location u_timer/u_4511/SM_8S_2_0\[5\] -fixed no 54 15
+set_location u_two_lights/state_RNI92V91\[0\] -fixed no 35 11
+set_location u_timer/light1_count\[2\] -fixed no 14 10
+set_location u_timer/light1_count\[0\] -fixed no 16 9
+set_location u_two_lights/state_RNO\[4\] -fixed no 34 3
+set_location u_timer/un3_clk_divider_I_7 -fixed no 5 9
+set_location u_two_lights/clk_divider_RNO\[4\] -fixed no 29 5
+set_location u_timer/light2_count\[0\] -fixed no 18 5
+set_location u_timer/un7_Display_data_if_generate_plus.mult1_un39_sum_ADD_6x6_slow_I3_S -fixed no 27 20
+set_location u_two_lights/clk_divider\[7\] -fixed no 30 5
+set_location u_two_lights/state_RNO\[2\] -fixed no 35 7
+set_location u_timer/u_4511/SM_8S_2_0_1\[5\] -fixed no 55 14
+set_location u_timer/light1_count_RNIN24S\[0\] -fixed no 16 10
+set_location u_two_lights/state\[1\] -fixed no 33 11
+set_location u_timer/clk_divider\[1\] -fixed no 8 10
+set_location u_timer/clk_divider_RNO\[5\] -fixed no 8 6
+set_location u_timer/un7_Display_data_if_generate_plus.mult1_un46_sum_ADD_6x6_slow_I1_S -fixed no 42 18
+set_location u_timer/light2_count_RNIQTGB1\[0\] -fixed no 20 6
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un39_sum_ADD_6x6_slow_I1_CO1 -fixed no 43 10
+set_location u_two_lights/clk_divider\[6\] -fixed no 30 4
+set_location u_timer/light2_count_RNI7Q481\[5\] -fixed no 21 6
+set_location u_timer/un3_clk_divider_I_8 -fixed no 4 8
+set_location u_timer/un7_Display_data_if_generate_plus.mult1_un32_sum_ADD_6x6_slow_I1_S -fixed no 27 18
+set_location u_timer/light1_count\[5\] -fixed no 13 9
+set_location u_two_lights/clk_divider_RNI0DF35\[2\] -fixed no 29 7
+set_location u_two_lights/state_RNIPRQI\[3\] -fixed no 36 9
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un46_sum_ADD_6x6_slow_I3_un5_CO1 -fixed no 43 12
+set_location u_timer/u_4511/SM_8S_2_0_o4\[5\] -fixed no 54 14
+set_location u_timer/u_4511/SM_8S_2_i_a4\[6\] -fixed no 55 16
+set_location u_timer/u_4511/SM_8S_2_i_a4\[1\] -fixed no 54 16
+set_location u_timer/un3_clk_divider_I_10 -fixed no 6 10
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un1_sum_I_6 -fixed no 44 20
+set_location u_timer/clk_divider_RNI0UCL\[0\] -fixed no 8 7
+set_location u_timer/un3_clk_divider_I_18 -fixed no 9 8
+set_location u_two_lights/sec_counter_RNO\[1\] -fixed no 28 10
+set_location u_timer/un7_Display_data_if_generate_plus.mult1_un46_sum_ADD_6x6_slow_I2_un1_CO1 -fixed no 39 18
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un46_sum_ADD_6x6_slow_I3_CO1 -fixed no 42 13
+set_location u_two_lights/sec_counter\[0\] -fixed no 31 11
+set_location u_timer/un3_clk_divider_I_23 -fixed no 11 10
+set_location u_two_lights/sec_counter_RNO\[6\] -fixed no 28 11
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un1_sum_I_12 -fixed no 43 14
+set_location u_timer/light1_count_RNO_0\[4\] -fixed no 14 9
+set_location u_timer/un3_clk_divider_I_26 -fixed no 13 7
+set_location u_timer/light1_count_RNO\[2\] -fixed no 11 9
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un39_sum_ADD_6x6_slow_I2_un1_CO1_1_tz -fixed no 44 9
+set_location u_two_lights/clk_divider_RNO\[1\] -fixed no 29 9
+set_location u_two_lights/clk_divider_RNID4DR2\[1\] -fixed no 33 7
+set_location u_timer/light2_state\[0\] -fixed no 17 5
+set_location u_timer/un3_clk_divider_I_17 -fixed no 9 4
+set_location u_two_lights/clk_divider\[5\] -fixed no 32 3
+set_location u_timer/un7_Display_data_if_generate_plus.mult1_un1_sum_I_18 -fixed no 42 19
+set_location u_timer/clk_divider\[5\] -fixed no 7 7
+set_location u_timer/clk_divider\[4\] -fixed no 9 10
+set_location u_timer/u_4511/SM_8S_2_i_a4\[0\] -fixed no 56 16
+set_location u_timer/clk_divider_RNO\[9\] -fixed no 12 6
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un39_sum_ADD_6x6_slow_I2_un5_CO1 -fixed no 44 8
+set_location u_two_lights/clk_divider_RNIUNTS1\[3\] -fixed no 32 5
+set_location u_timer/Scanning_count_RNISD5RL4\[0\] -fixed no 41 13
+set_location u_timer/Scanning_count_RNIFT4DI\[1\] -fixed no 40 16
+set_location u_timer/Scanning_count_RNI60QHIB\[1\] -fixed no 41 17
+set_location u_two_lights/clk_divider_RNO\[5\] -fixed no 28 6
+set_location u_timer/un7_Display_data_if_generate_plus.mult1_un46_sum_ADD_6x6_slow_I2_S -fixed no 39 19
+set_location u_timer/un7_Display_data_if_generate_plus.mult1_un1_sum_I_14 -fixed no 40 18
+set_location u_timer/light2_count_RNO_0\[0\] -fixed no 9 6
+set_location u_two_lights/sec_counter_RNO\[7\] -fixed no 30 13
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un32_sum_ADD_6x6_slow_I2_S -fixed no 41 8
+set_location u_two_lights/clk_divider_RNISGSP3\[2\] -fixed no 30 7
+set_location u_two_lights/sec_counter_RNO\[5\] -fixed no 27 11
+set_location u_two_lights/state\[2\] -fixed no 34 6
+set_location u_timer/un7_Display_data_if_generate_plus.mult1_un39_sum_ADD_6x6_slow_I1_CO1 -fixed no 29 18
+set_location u_timer/light1_count_RNI58ST\[5\] -fixed no 13 10
+set_location u_two_lights/state_RNO_2\[2\] -fixed no 35 8
+set_location u_two_lights/clk_divider_RNO\[8\] -fixed no 27 4
+set_location u_timer/Scanning_count_RNI9LVR\[0\] -fixed no 15 2
+set_location u_two_lights/state_RNO\[0\] -fixed no 34 11
+set_location u_timer/un7_Display_data_if_generate_plus.mult1_un46_sum_ADD_6x6_slow_I3_CO1 -fixed no 39 17
+set_location u_timer/light1_count_RNO_0\[0\] -fixed no 14 7
+set_location u_timer/light1_count_RNO\[0\] -fixed no 15 8
+set_location u_timer/light2_count\[5\] -fixed no 19 6
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un1_sum_I_16 -fixed no 45 19
+set_location u_two_lights/sec_counter_RNIGD4O\[3\] -fixed no 32 12
+set_location u_two_lights/clk_divider_RNO\[7\] -fixed no 30 8
+set_location u_timer/light1_count_RNIU3S51\[0\] -fixed no 23 11
+set_location u_timer/clk_divider\[3\] -fixed no 6 8
+set_location u_timer/u_4511/SM_8S_2_0\[2\] -fixed no 53 17
+set_location u_timer/un15_Display_data_if_generate_plus.mult1_un39_sum_ADD_6x6_slow_I3_CO1 -fixed no 42 9
+set_location u_two_lights/state_RNO_0\[3\] -fixed no 32 9
+set_location u_timer/light1_count_RNO\[3\] -fixed no 11 7
+set_location u_two_lights/sec_counter_RNIC94O\[2\] -fixed no 27 10
+set_location u_timer/u_4511/SM_8S_2_i_o2\[1\] -fixed no 55 15
+set_location u_two_lights/state_RNO_1\[2\] -fixed no 35 6
+set_location u_timer/un7_Display_data_if_generate_plus.mult1_un32_sum_ADD_6x6_slow_I3_un3_CO1 -fixed no 28 18

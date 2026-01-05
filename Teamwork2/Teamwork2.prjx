@@ -53,27 +53,27 @@ SIZE="214"
 ENDFILE
 VALUE "<project>\designer\impl1\top_module.adb,adb"
 STATE="utd"
-TIME="1767535949"
-SIZE="70656"
+TIME="1767536188"
+SIZE="87040"
 ENDFILE
 VALUE "<project>\designer\impl1\top_module.ide_des,ide_des"
 STATE="utd"
-TIME="1767535832"
-SIZE="213"
+TIME="1767536188"
+SIZE="1190"
 ENDFILE
 VALUE "<project>\designer\impl1\top_module.pdb,pdb"
-STATE="utd"
+STATE="ood"
 TIME="1767536180"
 SIZE="17954"
 ENDFILE
 VALUE "<project>\designer\impl1\top_module_ba.sdf,ba_sdf"
 STATE="utd"
-TIME="1767536173"
+TIME="1767536188"
 SIZE="39396"
 ENDFILE
 VALUE "<project>\designer\impl1\top_module_ba.v,ba_hdl"
 STATE="utd"
-TIME="1767536173"
+TIME="1767536188"
 SIZE="14004"
 ENDFILE
 VALUE "<project>\designer\impl1\top_module_ba_log.rpt,log"
@@ -108,8 +108,8 @@ SIZE="1457"
 ENDFILE
 VALUE "<project>\hdl\74hc283.v,hdl"
 STATE="utd"
-TIME="1767527732"
-SIZE="839"
+TIME="1767598051"
+SIZE="809"
 ENDFILE
 VALUE "<project>\hdl\top_module.v,hdl"
 STATE="utd"
@@ -118,28 +118,28 @@ SIZE="2122"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1767534956"
-SIZE="958"
+TIME="1767536343"
+SIZE="922"
 ENDFILE
 VALUE "<project>\simulation\testall_bench_postlayout_simulation.log,log"
 STATE="utd"
-TIME="1767536193"
-SIZE="68"
+TIME="1767536371"
+SIZE="7620"
 ENDFILE
 VALUE "<project>\simulation\testall_bench_postsynth_simulation.log,log"
 STATE="utd"
-TIME="1767535922"
-SIZE="68"
+TIME="1767535939"
+SIZE="6572"
 ENDFILE
 VALUE "<project>\simulation\testall_bench_presynth_simulation.log,log"
 STATE="utd"
-TIME="1767535875"
+TIME="1767598060"
 SIZE="68"
 ENDFILE
 VALUE "<project>\stimulus\testall_bench.v,tb_hdl"
 STATE="utd"
-TIME="1767535593"
-SIZE="5295"
+TIME="1767598544"
+SIZE="5721"
 ENDFILE
 VALUE "<project>\synthesis\top_module.edn,syn_edn"
 STATE="utd"
@@ -163,8 +163,8 @@ SIZE="310"
 ENDFILE
 VALUE "<project>\synthesis\top_module_syn.prj,prj"
 STATE="utd"
-TIME="1767535401"
-SIZE="1734"
+TIME="1767535914"
+SIZE="2006"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -365,12 +365,13 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;top_module reports:Export Back Annotated Files
+ReportsCurrentItem;Export Back Annotated Files:top_module_ba_log.rpt
 StartPage;StartPage;0
 HDL;stimulus\testall_bench.v;0
 HDL;hdl\top_module.v;0
 HDL;constraint\top_module.pdc;0
-ACTIVEVIEW;Reports
+HDL;hdl\74hc283.v;0
+ACTIVEVIEW;stimulus\testall_bench.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "_74hc138::work","hdl\74hc138.v","FALSE","FALSE"

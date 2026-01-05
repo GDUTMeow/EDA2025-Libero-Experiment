@@ -55,6 +55,18 @@ module testall_bench;
     // Testbench logic
     initial begin
         $display("[+] Starting testbench...");
+        // Initialize all inputs
+        {d_a0, d_a1, d_a2} = 3'b000;
+        {d_e1, d_e2, d_e3} = 3'b000;
+        {s_s0, s_s1, s_e1, s_e2} = 4'b0000;
+        {s_a0, s_a1, s_a2, s_a3} = 4'b0000;
+        {s_b0, s_b1, s_b2, s_b3} = 4'b0000;
+        {a_a0, a_a1, a_a2, a_a3} = 4'b0000;
+        {a_b0, a_b1, a_b2, a_b3} = 4'b0000;
+        a_cin = 0;
+        $display("[*] All inputs initialized.");
+        #100;
+
         // test for 74hc138
         // initialize all inputs
         d_a0 = 0; d_a1 = 0; d_a2 = 0;
@@ -110,13 +122,13 @@ module testall_bench;
         a_cin = 0;
 
         // 1101 + 1001 + 0 = 10110
-        #5 a_cin = 0; a_a3 = 1; a_a2 = 1; a_a1 = 0; a_a0 = 1; // A = 1101
+        #15 a_cin = 0; a_a3 = 1; a_a2 = 1; a_a1 = 0; a_a0 = 1; // A = 1101
         a_b3 = 1; a_b2 = 0; a_b1 = 0; a_b0 = 1; // B = 1001
         
         // 0111 + 0101 + 1 = 01101
-        #5 a_cin = 1; a_a3 = 0; a_a2 = 1; a_a1 = 1; a_a0 = 1; // A = 0111
+        #15 a_cin = 1; a_a3 = 0; a_a2 = 1; a_a1 = 1; a_a0 = 1; // A = 0111
         a_b3 = 0; a_b2 = 1; a_b1 = 0; a_b0 = 1; // B = 0101
-        #5;
+        #15;
 
         $display("[+] Testbench finished.");
     end
@@ -143,7 +155,7 @@ module testall_bench;
 
     // display result of 74hc283
     always @(a_a0 or a_a1 or a_a2 or a_a3 or a_b0 or a_b1 or a_b2 or a_b3 or a_cin) begin
-        #1 $display("[*] [74HC283] {a_a0, a_a1, a_a2, a_a3} = %b%b%b%b, {a_b0, a_b1, a_b2, a_b3} = %b%b%b%b, Cin = %b -> Sum = %b%b%b%b, Cout = %b",
+        #10 $display("[*] [74HC283] {a_a0, a_a1, a_a2, a_a3} = %b%b%b%b, {a_b0, a_b1, a_b2, a_b3} = %b%b%b%b, Cin = %b -> Sum = %b%b%b%b, Cout = %b",
             a_a3, a_a2, a_a1, a_a0,
             a_b3, a_b2, a_b1, a_b0,
             a_cin,

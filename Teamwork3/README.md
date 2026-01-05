@@ -16,6 +16,22 @@
   - 红灯 -> PIN 46 -> LL4/LED4
   - 黄灯 -> PIN 45 -> LL5/LED5
   - 绿灯 -> PIN 44 -> LL6/LED6
+- 七段数码管显示
+  - Seg0 -> PIN 77 -> A
+  - Seg1 -> PIN 79 -> B
+  - Seg2 -> PIN 81 -> C
+  - Seg3 -> PIN 83 -> D
+  - Seg4 -> PIN 85 -> E
+  - Seg5 -> PIN 90 -> F
+  - Seg6 -> PIN 92 -> G
+  - Seg7 -> PIN 94 -> DP (Optional)
+
+- 七段数码管选择
+  - Sel0 -> PIN 33 -> COM1
+  - Sel1 -> PIN 31 -> COM2
+  - Sel2 -> PIN 29 -> COM3
+  - Sel3 -> PIN 27 -> COM4
+
 
 > [!important]
 > 

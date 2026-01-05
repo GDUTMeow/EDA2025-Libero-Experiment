@@ -1,6 +1,8 @@
 module top_module(
     input Rst, Clk, en,    // Clock input (1kHz), Reset input and Enable input
-    output R1, R2, Y1, Y2, G1, G2
+    output R1, R2, Y1, Y2, G1, G2,
+    output [7:0] Seg,
+    output [3:0] Sel
 );
 
     wire clk_1s;
@@ -21,6 +23,15 @@ module top_module(
         .Y2 (Y2),
         .G1 (G1), 
         .G2 (G2)
+    );
+
+    timer u_timer (
+        .Clk (Clk),
+        .Rst (Rst),
+        .en (en),
+        .tick_1s (clk_1s),
+        .Seg (Seg),
+        .Sel (Sel)
     );
 
 endmodule
