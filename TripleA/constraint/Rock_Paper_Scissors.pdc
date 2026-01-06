@@ -1,0 +1,168 @@
+# Microsemi Physical design constraints file
+
+# Version: v11.9 11.9.0.4
+
+# Design Name: Rock_Paper_Scissors 
+
+# Input Netlist Format: edif 
+
+# Family: ProASIC3 , Die: A3P060 , Package: 100 VQFP , Speed grade: STD 
+
+# Date generated: Tue Jan 06 18:27:27 2026 
+
+
+
+#
+# User Groups
+#
+define_group -name P1\ Input
+define_group -name P2\ Input
+define_group -name Function
+define_group -name P1\ Output
+define_group -name P2\ Output
+define_group -name Winner\ Output
+
+#
+# IO banks setting
+#
+
+set_iobank Bank1 -vcci 3.30 -fixed no
+set_iobank Bank0 -vcci 3.30 -fixed no
+
+#
+# Local clock constraints
+#
+
+
+#
+# Region constraints
+#
+
+
+#
+# I/O constraints
+#
+
+
+# User Group Function
+set_io Clk -iostd LVTTL -REGISTER No -RES_PULL None -GROUP_NAME Function -pinname 65 -fixed yes
+set_io Rst -iostd LVTTL -REGISTER No -RES_PULL None -GROUP_NAME Function -pinname 80 -fixed yes
+set_io play_with_bot -iostd LVTTL -REGISTER No -RES_PULL None -GROUP_NAME Function -pinname 79 -fixed yes
+
+# User Group P1 Input
+set_io player1_input\[0\] -iostd LVTTL -REGISTER No -RES_PULL None -GROUP_NAME P1\ Input -pinname 15 -fixed yes
+set_io player1_input\[1\] -iostd LVTTL -REGISTER No -RES_PULL None -GROUP_NAME P1\ Input -pinname 11 -fixed yes
+set_io player1_input\[2\] -iostd LVTTL -REGISTER No -RES_PULL None -GROUP_NAME P1\ Input -pinname 10 -fixed yes
+
+# User Group P1 Output
+set_io player1_choice\[0\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME P1\ Output -pinname 45 -fixed yes
+set_io player1_choice\[1\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME P1\ Output -pinname 43 -fixed yes
+set_io player1_choice\[2\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME P1\ Output -pinname 41 -fixed yes
+
+# User Group P2 Input
+set_io player2_input\[0\] -iostd LVTTL -REGISTER No -RES_PULL None -GROUP_NAME P2\ Input -pinname 58 -fixed yes
+set_io player2_input\[1\] -iostd LVTTL -REGISTER No -RES_PULL None -GROUP_NAME P2\ Input -pinname 59 -fixed yes
+set_io player2_input\[2\] -iostd LVTTL -REGISTER No -RES_PULL None -GROUP_NAME P2\ Input -pinname 60 -fixed yes
+
+# User Group P2 Output
+set_io player2_choice\[0\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME P2\ Output -pinname 46 -fixed yes
+set_io player2_choice\[1\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME P2\ Output -pinname 44 -fixed yes
+set_io player2_choice\[2\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME P2\ Output -pinname 42 -fixed yes
+
+# User Group Winner Output
+set_io winner_output\[0\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME Winner\ Output -pinname 69 -fixed yes
+set_io winner_output\[1\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME Winner\ Output -pinname 70 -fixed yes
+set_io winner_output\[2\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME Winner\ Output -pinname 71 -fixed yes
+
+#
+# Core cell constraints
+#
+
+set_location random_reg\[5\] -fixed no 56 10
+set_location un5_bot_input_if_generate_plus.mult1_un1_sum_I_10 -fixed no 56 13
+set_location un5_bot_input_if_generate_plus.mult1_un61_sum_ADD_4x4_slow_I3_Y_0 -fixed no 52 10
+set_location player1_choice_pad_RNO\[2\] -fixed no 29 2
+set_location player1_choice_pad_RNO\[1\] -fixed no 33 2
+set_location un5_bot_input_if_generate_plus.mult1_un40_sum_ADD_4x4_slow_I1_un3_CO1 -fixed no 43 12
+set_location player1_input_pad_RNIR7BPOF3_1\[2\] -fixed no 48 15
+set_location random_reg\[7\] -fixed no 53 11
+set_location random_reg\[0\] -fixed no 55 10
+set_location player1_input_pad_RNIGOSGGA2\[0\] -fixed no 52 15
+set_location un5_bot_input_if_generate_plus.mult1_un26_sum_ADD_4x4_slow_I2_un1_CO1 -fixed no 29 12
+set_location un5_bot_input_if_generate_plus.mult1_un47_sum_ADD_4x4_slow_I1_CO1 -fixed no 46 10
+set_location un5_bot_input_if_generate_plus.mult1_un54_sum_ADD_4x4_slow_I3_Y_1 -fixed no 47 9
+set_location un5_bot_input_if_generate_plus.mult1_un19_sum_random_reg_2_0\[0\] -fixed no 54 11
+set_location random_reg\[1\] -fixed no 56 11
+set_location un5_bot_input_if_generate_plus.mult1_un33_sum_ADD_4x4_slow_I2_un1_CO1_0 -fixed no 38 11
+set_location un5_bot_input_if_generate_plus.mult1_un61_sum_ADD_4x4_slow_I1_S -fixed no 57 11
+set_location player2_input_pad_RNIVPP5851\[1\] -fixed no 52 13
+set_location player1_input_pad_RNIUPT7_1\[2\] -fixed no 47 18
+set_location random_reg\[2\] -fixed no 56 12
+set_location un5_bot_input_if_generate_plus.mult1_un61_sum_ADD_4x4_slow_I3_Y_1 -fixed no 53 9
+set_location un5_bot_input_if_generate_plus.mult1_un26_sum_ADD_4x4_slow_I3_Y -fixed no 28 12
+set_location un5_bot_input_if_generate_plus.mult1_un26_sum_ADD_4x4_slow_I1_S -fixed no 38 12
+set_location un5_bot_input_if_generate_plus.mult1_un33_sum_ADD_4x4_slow_I1_CO1 -fixed no 39 11
+set_location un5_bot_input_if_generate_plus.mult1_un47_sum_ADD_4x4_slow_I3_Y -fixed no 44 10
+set_location un5_bot_input_if_generate_plus.mult1_un40_sum_ADD_4x4_slow_I1_CO1 -fixed no 44 12
+set_location un5_bot_input_if_generate_plus.mult1_un40_sum_ADD_4x4_slow_I2_un1_CO1_0 -fixed no 44 11
+set_location un5_bot_input_if_generate_plus.mult1_un47_sum_ADD_4x4_slow_I1_S -fixed no 54 9
+set_location un5_bot_input_if_generate_plus.mult1_un19_sum_random_reg_2\[0\] -fixed no 55 11
+set_location un5_bot_input_if_generate_plus.mult1_un54_sum_ADD_4x4_slow_I2_un1_CO1_0 -fixed no 53 8
+set_location un5_bot_input_if_generate_plus.mult1_un19_sum_ADD_4x4_slow_I1_S -fixed no 36 11
+set_location un5_bot_input_if_generate_plus.mult1_un40_sum_ADD_4x4_slow_I3_Y_1 -fixed no 40 11
+set_location player1_input_pad_RNIR7BPOF3\[2\] -fixed no 47 16
+set_location un5_bot_input_if_generate_plus.mult1_un54_sum_ADD_4x4_slow_I3_Y_0 -fixed no 54 8
+set_location un5_bot_input_if_generate_plus.mult1_un1_sum_I_8 -fixed no 54 13
+set_location winner_output_pad_RNO\[2\] -fixed no 58 21
+set_location un5_bot_input_if_generate_plus.mult1_un40_sum_ADD_4x4_slow_I1_S -fixed no 45 10
+set_location un5_bot_input_if_generate_plus.mult1_un33_sum_ADD_4x4_slow_I3_Y -fixed no 37 12
+set_location player2_choice_pad_RNO\[0\] -fixed no 39 2
+set_location random_reg\[6\] -fixed no 53 10
+set_location un5_bot_input_if_generate_plus.mult1_un47_sum_ADD_4x4_slow_I3_Y_0 -fixed no 44 9
+set_location un5_bot_input_if_generate_plus.mult1_un47_sum_ADD_4x4_slow_I3_Y_1 -fixed no 45 11
+set_location player1_input_pad_RNIOLOAHV2\[2\] -fixed no 48 18
+set_location winner_output_pad_RNO\[0\] -fixed no 58 20
+set_location player2_input_pad_RNITDDHOF3_0\[2\] -fixed no 48 17
+set_location un1_bot_input_2 -fixed no 53 13
+set_location winner_output_pad_RNO\[1\] -fixed no 57 19
+set_location un5_bot_input_if_generate_plus.mult1_un47_sum_ADD_4x4_slow_I1_un3_CO1 -fixed no 43 9
+set_location un5_bot_input_if_generate_plus.mult1_un40_sum_ADD_4x4_slow_I3_Y -fixed no 39 12
+set_location un5_bot_input_if_generate_plus.mult1_un19_sum_ADD_4x4_slow_I2_un1_CO1 -fixed no 29 13
+set_location player1_input_pad_RNIUPT7\[2\] -fixed no 47 15
+set_location un5_bot_input_if_generate_plus.mult1_un54_sum_ADD_4x4_slow_I1_S -fixed no 56 9
+set_location un5_bot_input_if_generate_plus.mult1_un19_sum_ADD_4x4_slow_I1_CO1 -fixed no 28 13
+set_location player1_input_pad_RNIUPT7_0\[2\] -fixed no 48 9
+set_location un5_bot_input_if_generate_plus.mult1_un47_sum_ADD_4x4_slow_I2_un1_CO1_0 -fixed no 45 9
+set_location un1_bot_input_3 -fixed no 55 13
+set_location player1_input_pad_RNIJ595\[0\] -fixed no 47 17
+set_location random_reg\[4\] -fixed no 54 10
+set_location player2_choice_pad_RNO\[2\] -fixed no 31 2
+set_location player2_choice_pad_RNO\[1\] -fixed no 35 2
+set_location player1_input_pad_RNI9DE8851\[1\] -fixed no 52 14
+set_location player1_input_pad_RNIHN1CAF2\[2\] -fixed no 48 16
+set_location un5_bot_input_if_generate_plus.mult1_un1_sum_I_1 -fixed no 57 12
+set_location un5_bot_input_if_generate_plus.mult1_un26_sum_ADD_4x4_slow_I3_Y_2 -fixed no 27 13
+set_location un5_bot_input_if_generate_plus.mult1_un40_sum_ADD_4x4_slow_I3_Y_0 -fixed no 43 11
+set_location player2_input_pad_RNI0RP5851\[2\] -fixed no 55 14
+set_location un5_bot_input_if_generate_plus.mult1_un61_sum_ADD_4x4_slow_I2_un1_CO1_0 -fixed no 57 9
+set_location un5_bot_input_if_generate_plus.mult1_un33_sum_ADD_4x4_slow_I3_Y_0 -fixed no 37 11
+set_location un5_bot_input_if_generate_plus.mult1_un33_sum_ADD_4x4_slow_I1_S -fixed no 43 10
+set_location un5_bot_input_if_generate_plus.mult1_un61_sum_ADD_4x4_slow_I3_Y -fixed no 53 12
+set_location un5_bot_input_if_generate_plus.mult1_un33_sum_ADD_4x4_slow_I1_un3_CO1 -fixed no 37 10
+set_location player1_input_pad_RNIR7BPOF3_0\[2\] -fixed no 48 10
+set_location un5_bot_input_if_generate_plus.mult1_un33_sum_ADD_4x4_slow_I3_Y_1 -fixed no 36 12
+set_location un5_bot_input_if_generate_plus.mult1_un54_sum_ADD_4x4_slow_I1_CO1 -fixed no 52 9
+set_location player2_input_pad_RNITDDHOF3\[2\] -fixed no 49 17
+set_location un5_bot_input_if_generate_plus.mult1_un61_sum_ADD_4x4_slow_I2_un1_CO1_0_tz -fixed no 55 8
+set_location player1_choice_pad_RNO\[0\] -fixed no 37 2
+set_location random_reg\[3\] -fixed no 55 12
+set_location un5_bot_input_if_generate_plus.mult1_un54_sum_ADD_4x4_slow_I3_Y -fixed no 46 9
+set_location un5_bot_input_if_generate_plus.mult1_un26_sum_ADD_4x4_slow_I2_un1_CO1_0_tz -fixed no 30 13
+set_location player2_input_pad_RNITIJBGA2_0\[0\] -fixed no 48 11
+set_location un5_bot_input_if_generate_plus.mult1_un61_sum_ADD_4x4_slow_I1_un3_CO1 -fixed no 52 11
+set_location player2_input_pad_RNITIJBGA2\[0\] -fixed no 48 14
+set_location un1_bot_input_1 -fixed no 54 14
+set_location un5_bot_input_if_generate_plus.mult1_un26_sum_ADD_4x4_slow_I2_un5_CO1 -fixed no 30 12
+set_location winner_output_pad_RNO_0\[0\] -fixed no 58 19
+set_location un5_bot_input_if_generate_plus.mult1_un54_sum_ADD_4x4_slow_I1_un3_CO1 -fixed no 55 9
+set_location player2_input_pad_RNIUOP5851\[0\] -fixed no 53 14
