@@ -13,10 +13,15 @@ KEY VendorTechnology_Package "vq100"
 KEY VendorTechnology_Speed "STD"
 KEY VendorTechnology_DieVoltage "1.5"
 KEY VendorTechnology_PART_RANGE "COM"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE ""
 KEY VendorTechnology_IO_DEFT_STD "LVTTL"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY ""
+KEY VendorTechnology_RAD_EXPOSURE ""
 KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
 KEY VendorTechnology_RESTRICTPROBEPINS "1"
 KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE ""
 KEY VendorTechnology_TARGETDEVICESFORMIGRATION "IS2X2M1"
 KEY VendorTechnology_TEMPR "COM"
 KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
@@ -26,21 +31,73 @@ KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
 KEY ProjectLocation "F:\Git\GDUTMeow\EDA2025-Libero-Experiment\Teamwork4"
-KEY ProjectDescription ""
+KEY ProjectDescription "???7.7.3 ???????p260????????????"
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
 KEY Vendor "Actel"
+KEY ActiveRoot "running_light::work"
 LIST REVISIONS
 VALUE="Impl1",NUM=1
 CURREV=1
 ENDLIST
 LIST FileManager
+VALUE "<project>\designer\impl1\running_light.ide_des,ide_des"
+STATE="utd"
+TIME="1767682621"
+SIZE="216"
+ENDFILE
+VALUE "<project>\hdl\marquee_led.v,hdl"
+STATE="utd"
+TIME="1767677370"
+SIZE="4096"
+ENDFILE
+VALUE "<project>\hdl\running_light.v,hdl"
+STATE="utd"
+TIME="1767686344"
+SIZE="4866"
+ENDFILE
+VALUE "<project>\simulation\run.do,do"
+STATE="utd"
+TIME="1767686683"
+SIZE="671"
+ENDFILE
+VALUE "<project>\simulation\testbench_presynth_simulation.log,log"
+STATE="utd"
+TIME="1767686694"
+SIZE="68"
+ENDFILE
+VALUE "<project>\stimulus\testbench.v,tb_hdl"
+STATE="utd"
+TIME="1767686671"
+SIZE="1302"
+ENDFILE
 ENDLIST
 LIST UsedFile
 ENDLIST
 LIST NewModulesInfo
+LIST "running_light::work"
+FILE "<project>\hdl\running_light.v,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\testbench.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
 ENDLIST
 LIST AssociatedStimulus
+LIST running_light
+VALUE "<project>\stimulus\testbench.v,tb_hdl"
+ENDLIST
 ENDLIST
 LIST Other_Association
 ENDLIST
@@ -110,8 +167,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -119,7 +176,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\Modelsim\win32acoem\modelsim.exe"
-PARAM=" -l testbench_postsynth_simulation.log "
+PARAM=" -l testbench_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -144,6 +201,18 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
+LIST "running_light::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -160,11 +229,23 @@ ORIENTATION;HORIZONTAL
 Reports;Reports;0
 ReportsCurrentItem;Project Summary:Teamwork4.log
 StartPage;StartPage;0
-ACTIVEVIEW;Reports
+HDL;hdl\running_light.v;0
+HDL;stimulus\testbench.v;0
+ACTIVEVIEW;stimulus\testbench.v
 ENDLIST
 LIST ModuleSubBlockList
+LIST "marquee_led::work","hdl\marquee_led.v","FALSE","FALSE"
+ENDLIST
+LIST "running_light::work","hdl\running_light.v","FALSE","FALSE"
+ENDLIST
+LIST "testbench::work","stimulus\testbench.v","FALSE","TRUE"
+SUBBLOCK "running_light::work","hdl\running_light.v","FALSE","FALSE"
+ENDLIST
 ENDLIST
 LIST ActiveTestBenchList
+LIST "running_light::work"
+ACTIVETESTBENCH "testbench::work","stimulus\testbench.v","FALSE"
+ENDLIST
 ENDLIST
 LIST IOTabList
 ENDLIST

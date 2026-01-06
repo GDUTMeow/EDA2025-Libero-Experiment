@@ -1,0 +1,83 @@
+# Microsemi Physical design constraints file
+
+# Version: v11.9 11.9.0.4
+
+# Design Name: running_light 
+
+# Input Netlist Format: edif 
+
+# Family: ProASIC3 , Die: A3P060 , Package: 100 VQFP , Speed grade: STD 
+
+# Date generated: Tue Jan 06 16:14:27 2026 
+
+
+
+#
+# User Groups
+#
+define_group -name LED\ OUTPUT
+define_group -name Funtions
+define_group -name Mode\ Switcher
+
+#
+# IO banks setting
+#
+
+set_iobank Bank1 -vcci 3.30 -fixed no
+set_iobank Bank0 -vcci 3.30 -fixed no
+
+#
+# Local clock constraints
+#
+
+
+#
+# Region constraints
+#
+
+
+#
+# I/O constraints
+#
+
+
+# User Group Funtions
+set_io Clk -iostd LVTTL -REGISTER No -RES_PULL None -GROUP_NAME Funtions
+set_io Rst -iostd LVTTL -REGISTER No -RES_PULL None -GROUP_NAME Funtions -pinname 15 -fixed yes
+
+# User Group LED OUTPUT
+set_io led\[0\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 2 -fixed yes
+set_io led\[1\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 3 -fixed yes
+set_io led\[2\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 4 -fixed yes
+set_io led\[3\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 46 -fixed yes
+set_io led\[4\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 45 -fixed yes
+set_io led\[5\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 44 -fixed yes
+set_io led\[6\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 43 -fixed yes
+set_io led\[7\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 42 -fixed yes
+set_io led\[8\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 41 -fixed yes
+set_io led\[9\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 40 -fixed yes
+set_io led\[10\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 36 -fixed yes
+set_io led\[11\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 35 -fixed yes
+set_io led\[12\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 34 -fixed yes
+set_io led\[13\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 33 -fixed yes
+set_io led\[14\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 32 -fixed yes
+set_io led\[15\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 31 -fixed yes
+set_io led\[16\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 30 -fixed yes
+set_io led\[17\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 29 -fixed yes
+set_io led\[18\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 28 -fixed yes
+set_io led\[19\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 27 -fixed yes
+set_io led\[20\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 26 -fixed yes
+set_io led\[21\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 23 -fixed yes
+set_io led\[22\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 22 -fixed yes
+set_io led\[23\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 21 -fixed yes
+set_io led\[24\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 20 -fixed yes
+set_io led\[25\] -iostd LVTTL -REGISTER No -OUT_DRIVE 12 -SLEW High -RES_PULL None -SKEW Off -OUT_LOAD 35 -GROUP_NAME LED\ OUTPUT -pinname 19 -fixed yes
+
+# User Group Mode Switcher
+set_io light_mode\[0\] -iostd LVTTL -REGISTER No -RES_PULL None -GROUP_NAME Mode\ Switcher -pinname 80 -fixed yes
+set_io light_mode\[1\] -iostd LVTTL -REGISTER No -RES_PULL None -GROUP_NAME Mode\ Switcher -pinname 79 -fixed yes
+
+#
+# Core cell constraints
+#
+

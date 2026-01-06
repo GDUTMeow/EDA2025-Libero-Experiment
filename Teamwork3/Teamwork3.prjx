@@ -43,57 +43,62 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\constraint\top_module.pdc,pdc"
 STATE="utd"
-TIME="1767606527"
-SIZE="22875"
+TIME="1767608040"
+SIZE="23379"
 ENDFILE
 VALUE "<project>\designer\impl1\top_module.adb,adb"
 STATE="utd"
-TIME="1767599677"
-SIZE="153600"
+TIME="1767608893"
+SIZE="304640"
 ENDFILE
 VALUE "<project>\designer\impl1\top_module.ide_des,ide_des"
 STATE="utd"
-TIME="1767599677"
-SIZE="1003"
+TIME="1767608893"
+SIZE="999"
 ENDFILE
 VALUE "<project>\designer\impl1\top_module.pdb,pdb"
 STATE="utd"
-TIME="1767606527"
-SIZE="25101"
+TIME="1767608890"
+SIZE="25102"
 ENDFILE
 VALUE "<project>\designer\impl1\top_module_ba.sdf,ba_sdf"
-STATE="ood"
-TIME="1767545184"
-SIZE="68059"
+STATE="utd"
+TIME="1767608879"
+SIZE="154200"
+ENDFILE
+VALUE "<project>\designer\impl1\top_module_ba.v,ba_hdl"
+STATE="utd"
+TIME="1767608879"
+SIZE="66534"
 ENDFILE
 VALUE "<project>\designer\impl1\top_module_compile_log.rpt,log"
 STATE="utd"
-TIME="1767606469"
+TIME="1767608750"
 SIZE="8446"
 ENDFILE
 VALUE "<project>\designer\impl1\top_module_fp\projectData\top_module.pdb,pdb"
 STATE="utd"
-TIME="1767604784"
-SIZE="25331"
+TIME="1767609156"
+SIZE="25102"
 ENDFILE
 VALUE "<project>\designer\impl1\top_module_fp\top_module.pro,pro"
 STATE="utd"
-TIME="1767604784"
+TIME="1767609156"
 SIZE="2434"
 ENDFILE
 VALUE "<project>\designer\impl1\top_module_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1767606485"
-SIZE="2489"
+TIME="1767608764"
+SIZE="2502"
 ENDFILE
 VALUE "<project>\designer\impl1\top_module_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1767606527"
+TIME="1767608846"
 SIZE="753"
 ENDFILE
 VALUE "<project>\designer\impl1\top_module_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1767606520"
+TIME="1767608806"
 SIZE="1193"
 ENDFILE
 VALUE "<project>\designer\impl1\_1s_clock.ide_des,ide_des"
@@ -113,7 +118,7 @@ SIZE="651"
 ENDFILE
 VALUE "<project>\hdl\light.v,hdl"
 STATE="utd"
-TIME="1767544333"
+TIME="1767607329"
 SIZE="3131"
 ENDFILE
 VALUE "<project>\hdl\timer.v,hdl"
@@ -123,18 +128,18 @@ SIZE="4696"
 ENDFILE
 VALUE "<project>\hdl\top_module.v,hdl"
 STATE="utd"
-TIME="1767606365"
+TIME="1767607329"
 SIZE="759"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1767596905"
+TIME="1767608720"
 SIZE="684"
 ENDFILE
-VALUE "<project>\simulation\testbench_presynth_simulation.log,log"
+VALUE "<project>\simulation\testbench_postsynth_simulation.log,log"
 STATE="utd"
-TIME="1767606377"
-SIZE="68"
+TIME="1767608741"
+SIZE="3861"
 ENDFILE
 VALUE "<project>\stimulus\testbench.v,tb_hdl"
 STATE="utd"
@@ -143,28 +148,28 @@ SIZE="2960"
 ENDFILE
 VALUE "<project>\synthesis\top_module.edn,syn_edn"
 STATE="utd"
-TIME="1767596885"
-SIZE="102278"
+TIME="1767608714"
+SIZE="160288"
 ENDFILE
 VALUE "<project>\synthesis\top_module.so,so"
 STATE="utd"
-TIME="1767596885"
+TIME="1767608714"
 SIZE="241"
 ENDFILE
 VALUE "<project>\synthesis\top_module.v,syn_hdl"
-STATE="ood"
-TIME="1767596904"
-SIZE="28411"
+STATE="utd"
+TIME="1767608719"
+SIZE="42884"
 ENDFILE
 VALUE "<project>\synthesis\top_module_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1767596885"
+TIME="1767608714"
 SIZE="399"
 ENDFILE
 VALUE "<project>\synthesis\top_module_syn.prj,prj"
 STATE="utd"
-TIME="1767596886"
-SIZE="2000"
+TIME="1767608714"
+SIZE="2088"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -299,7 +304,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\Modelsim\win32acoem\modelsim.exe"
-PARAM=" -l testbench_presynth_simulation.log "
+PARAM=" -l testbench_postsynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -364,15 +369,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Generate Programming Data:top_module_prgdata_log.rpt
-HDL;hdl\clock.v;0
-HDL;hdl\light.v;0
-HDL;hdl\top_module.v;0
 StartPage;StartPage;0
-HDL;stimulus\testbench.v;0
-HDL;hdl\timer.v;0
-ACTIVEVIEW;Reports
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "_1s_clock::work","hdl\clock.v","FALSE","FALSE"
