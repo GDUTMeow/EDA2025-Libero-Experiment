@@ -41,10 +41,60 @@ VALUE="Impl1",NUM=1
 CURREV=1
 ENDLIST
 LIST FileManager
+VALUE "<project>\constraint\running_light.pdc,pdc"
+STATE="utd"
+TIME="1767696977"
+SIZE="16167"
+ENDFILE
+VALUE "<project>\designer\impl1\running_light.adb,adb"
+STATE="utd"
+TIME="1767696982"
+SIZE="164352"
+ENDFILE
 VALUE "<project>\designer\impl1\running_light.ide_des,ide_des"
 STATE="utd"
-TIME="1767682621"
-SIZE="216"
+TIME="1767696982"
+SIZE="1008"
+ENDFILE
+VALUE "<project>\designer\impl1\running_light.pdb,pdb"
+STATE="utd"
+TIME="1767687348"
+SIZE="23580"
+ENDFILE
+VALUE "<project>\designer\impl1\running_light_ba.sdf,ba_sdf"
+STATE="ood"
+TIME="1767687336"
+SIZE="140909"
+ENDFILE
+VALUE "<project>\designer\impl1\running_light_compile_log.rpt,log"
+STATE="utd"
+TIME="1767687012"
+SIZE="8568"
+ENDFILE
+VALUE "<project>\designer\impl1\running_light_fp\projectData\running_light.pdb,pdb"
+STATE="utd"
+TIME="1767698465"
+SIZE="23579"
+ENDFILE
+VALUE "<project>\designer\impl1\running_light_fp\running_light.pro,pro"
+STATE="utd"
+TIME="1767697005"
+SIZE="2057"
+ENDFILE
+VALUE "<project>\designer\impl1\running_light_placeroute_log.rpt,log"
+STATE="utd"
+TIME="1767698145"
+SIZE="2532"
+ENDFILE
+VALUE "<project>\designer\impl1\running_light_prgdata_log.rpt,log"
+STATE="utd"
+TIME="1767698158"
+SIZE="902"
+ENDFILE
+VALUE "<project>\designer\impl1\running_light_verifytiming_log.rpt,log"
+STATE="utd"
+TIME="1767698153"
+SIZE="1217"
 ENDFILE
 VALUE "<project>\hdl\marquee_led.v,hdl"
 STATE="utd"
@@ -53,23 +103,43 @@ SIZE="4096"
 ENDFILE
 VALUE "<project>\hdl\running_light.v,hdl"
 STATE="utd"
-TIME="1767686344"
-SIZE="4866"
+TIME="1767698091"
+SIZE="4860"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1767686683"
-SIZE="671"
-ENDFILE
-VALUE "<project>\simulation\testbench_presynth_simulation.log,log"
-STATE="utd"
-TIME="1767686694"
-SIZE="68"
+TIME="1767686900"
+SIZE="687"
 ENDFILE
 VALUE "<project>\stimulus\testbench.v,tb_hdl"
 STATE="utd"
 TIME="1767686671"
 SIZE="1302"
+ENDFILE
+VALUE "<project>\synthesis\running_light.edn,syn_edn"
+STATE="utd"
+TIME="1767686893"
+SIZE="109749"
+ENDFILE
+VALUE "<project>\synthesis\running_light.so,so"
+STATE="utd"
+TIME="1767686893"
+SIZE="247"
+ENDFILE
+VALUE "<project>\synthesis\running_light.v,syn_hdl"
+STATE="ood"
+TIME="1767686899"
+SIZE="29001"
+ENDFILE
+VALUE "<project>\synthesis\running_light_sdc.sdc,syn_sdc"
+STATE="utd"
+TIME="1767686893"
+SIZE="402"
+ENDFILE
+VALUE "<project>\synthesis\running_light_syn.prj,prj"
+STATE="utd"
+TIME="1767686893"
+SIZE="1717"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -82,7 +152,10 @@ VALUE "<project>\stimulus\testbench.v,tb_hdl"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
+LiberoState=Post_Layout
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\running_light.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\running_light.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -91,6 +164,10 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl1\running_light_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl1\running_light_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
 ENDLIST
@@ -167,8 +244,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -176,7 +253,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\Modelsim\win32acoem\modelsim.exe"
-PARAM=" -l testbench_presynth_simulation.log "
+PARAM=""
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -203,7 +280,10 @@ ENDLIST
 LIST ProjectState5.1
 LIST "running_light::work"
 LIST Impl1
+LiberoState=Post_Layout
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\running_light.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\running_light.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -227,11 +307,11 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Project Summary:Teamwork4.log
+ReportsCurrentItem;Generate Programming Data:running_light_prgdata_log.rpt
 StartPage;StartPage;0
 HDL;hdl\running_light.v;0
 HDL;stimulus\testbench.v;0
-ACTIVEVIEW;stimulus\testbench.v
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "marquee_led::work","hdl\marquee_led.v","FALSE","FALSE"

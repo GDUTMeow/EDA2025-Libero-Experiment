@@ -71,6 +71,11 @@ STATE="utd"
 TIME="1767695302"
 SIZE="7775"
 ENDFILE
+VALUE "<project>\designer\impl1\Rock_Paper_Scissors_fp\Rock_Paper_Scissors.pro,pro"
+STATE="utd"
+TIME="1767698752"
+SIZE="2287"
+ENDFILE
 VALUE "<project>\designer\impl1\Rock_Paper_Scissors_placeroute_log.rpt,log"
 STATE="utd"
 TIME="1767695324"
@@ -301,8 +306,13 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Generate Programming Data:Rock_Paper_Scissors_prgdata_log.rpt
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+HDL;hdl\RPS.v;0
+HDL;stimulus\play_rps.v;0
+HDL;synthesis\Rock_Paper_Scissors.srr;0
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "Rock_Paper_Scissors::work","hdl\RPS.v","FALSE","FALSE"

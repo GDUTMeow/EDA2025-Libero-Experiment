@@ -94,10 +94,9 @@ module running_light (
                     // Random bouncing
                     2'b11: begin
                         // Using LFSR output to pick a random index 0-25
-                        if (lfsr_reg[4:0] < 26)
-                            led <= (26'b1 << lfsr_reg[4:0]);
-                        else
-                            led <= 26'b1; // Default
+                        if (clock_counter >= M4_CLK_NEEDED) begin
+                            led[lfsr_reg % 26] <= ~led[lfsr_reg % 26]; // Toggle random LED
+                        end
                         clock_counter <= 1;  // Reset counter
                     end
 
